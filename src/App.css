@@ -6,9 +6,46 @@
 ul {
   border: 1px solid black;
   padding: 0 16px;
+  background: white;
+  margin: 0;
 }
 
 li {
   list-style-type: square;
   margin-left: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 8px;
+  height: 60px;
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  top: 60px;
+}
+
+h3 {
+  top: 120px;
+}
+
+h4 {
+  top: 180px;
+}
+
+h5 {
+  top: 240px;
+}
+
+h6 {
+  top: 300px;
 }

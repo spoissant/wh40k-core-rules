@@ -52,7 +52,7 @@ const Title = ({ node, level }) => {
 
   return (
     <>
-      {title}
+      {node.text && title}
       {children}
     </>
   )
