@@ -1,0 +1,14 @@
+.App {
+  text-align: left;
+  padding: 20px;
+}
+
+ul {
+  border: 1px solid black;
+  padding: 0 16px;
+}
+
+li {
+  list-style-type: square;
+  margin-left: 16px;
+}
