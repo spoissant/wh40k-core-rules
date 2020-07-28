@@ -7,6 +7,8 @@ import styled from "styled-components";
 import coreRules from "./data/core-rules";
 import { Waypoint } from "react-waypoint";
 
+import useDebounce from './utils/utils'
+
 ReactGA.initialize('UA-173899337-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
@@ -31,20 +33,22 @@ const Header = styled.div`
 function App() {
   const [breadcrumb, setBreadcrumb] = useState(["", "", "", "", "", ""]);
   const updateBreadcrumb = ({ level, text }) => {
-    // if(level <= 3) {
-    //   const idx = level - 1;
-    //   setBreadcrumb((prev) => {
-    //     const ret = [...prev];
-    //     ret.fill("", idx);
-    //     ret[idx] = text;
-    //     return ret;
-    //   });
-    // }
+    if(level <= 3) {
+      const idx = level - 1;
+      setBreadcrumb((prev) => {
+        const ret = [...prev];
+        ret.fill("", idx);
+        ret[idx] = text;
+        return ret;
+      });
+    }
   };
+
+  const debouncedBreadcrumb = useDebounce(breadcrumb, 100);
 
   return (
     <div className="App">
-      <Header>{breadcrumb.filter((item) => item).join(" > ")}</Header>
+      <Header>{debouncedBreadcrumb.filter((item) => item).join(" > ")}</Header>
       <Container>
         {coreRules.children.map((c, i) => (
           <Title

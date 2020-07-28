@@ -19,7 +19,7 @@ export default {
   tags: [],
   children: [
     {
-      text: <>Basic Ruless</>,
+      text: <>Basic Rules</>,
       level: 1,
       tags: [],
       children: [
