@@ -100,7 +100,7 @@ const Title = ({ node, level, updateBreadcrumb }) => {
   if (node.children.every((c) => c.children.length === 0) && !node.level) {
     children = <Rules nodes={node.children} />;
   } else {
-    children = node.children.map((c, i) => (
+    children = node.children?.map((c, i) => (
       <Title
         key={i}
         node={c}
