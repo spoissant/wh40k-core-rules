@@ -31,7 +31,6 @@ li {
   position: relative;    /* It's needed for setting position to absolute in the next rule. */
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
-  line-height: 18px;
   padding: 2px 0;
   font-size: 18px;
 }
@@ -40,7 +39,7 @@ li:before {
   content: '■';
   color: #9f191e;
   position: absolute;
-  line-height: 14px;
+  line-height: 17px;
   left: -0.8em;          /* Adjust this value so that it appears where you want. */
   font-size: 34px;      /* Adjust this value so that it appears what size you want. */
 }
