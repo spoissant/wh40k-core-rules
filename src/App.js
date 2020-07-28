@@ -44,7 +44,7 @@ function App() {
     }
   };
 
-  const debouncedBreadcrumb = useDebounce(breadcrumb, 100);
+  const debouncedBreadcrumb = useDebounce(breadcrumb, 300);
 
   return (
     <div className="App">
