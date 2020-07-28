@@ -44,12 +44,11 @@ function App() {
     }
   };
 
-  const debounce = 300;
   const debouncedBreadcrumb = useDebounce(breadcrumb, 300);
 
   return (
     <div className="App">
-      <Header>{debounce}{debouncedBreadcrumb.filter((item) => item).join(" > ")}</Header>
+      {/* <Header>{debouncedBreadcrumb.filter((item) => item).join(" > ")}</Header> */}
       <Container>
         {coreRules.children.map((c, i) => (
           <Title
