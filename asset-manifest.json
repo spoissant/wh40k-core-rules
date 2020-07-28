@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/wh40k-core-rules/static/css/main.1a2da361.chunk.css",
+    "main.js": "/wh40k-core-rules/static/js/main.a9d78f32.chunk.js",
+    "main.js.map": "/wh40k-core-rules/static/js/main.a9d78f32.chunk.js.map",
+    "runtime-main.js": "/wh40k-core-rules/static/js/runtime-main.fd5dd5d3.js",
+    "runtime-main.js.map": "/wh40k-core-rules/static/js/runtime-main.fd5dd5d3.js.map",
+    "static/js/2.cea47c21.chunk.js": "/wh40k-core-rules/static/js/2.cea47c21.chunk.js",
+    "static/js/2.cea47c21.chunk.js.map": "/wh40k-core-rules/static/js/2.cea47c21.chunk.js.map",
+    "index.html": "/wh40k-core-rules/index.html",
+    "precache-manifest.2256079309ac7684391ded7d1e1ce422.js": "/wh40k-core-rules/precache-manifest.2256079309ac7684391ded7d1e1ce422.js",
+    "service-worker.js": "/wh40k-core-rules/service-worker.js",
+    "static/css/main.1a2da361.chunk.css.map": "/wh40k-core-rules/static/css/main.1a2da361.chunk.css.map",
+    "static/js/2.cea47c21.chunk.js.LICENSE.txt": "/wh40k-core-rules/static/js/2.cea47c21.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd5dd5d3.js",
+    "static/js/2.cea47c21.chunk.js",
+    "static/css/main.1a2da361.chunk.css",
+    "static/js/main.a9d78f32.chunk.js"
+  ]
+}
