@@ -31,20 +31,20 @@ const Header = styled.div`
 `;
 
 function App() {
-  const [breadcrumb, setBreadcrumb] = useState(["", "", "", "", "", ""]);
-  const updateBreadcrumb = ({ level, text }) => {
-    if(level <= 3) {
-      const idx = level - 1;
-      setBreadcrumb((prev) => {
-        const ret = [...prev];
-        ret.fill("", idx);
-        ret[idx] = text;
-        return ret;
-      });
-    }
-  };
+  // const [breadcrumb, setBreadcrumb] = useState(["", "", "", "", "", ""]);
+  // const updateBreadcrumb = ({ level, text }) => {
+  //   if(level <= 3) {
+  //     const idx = level - 1;
+  //     setBreadcrumb((prev) => {
+  //       const ret = [...prev];
+  //       ret.fill("", idx);
+  //       ret[idx] = text;
+  //       return ret;
+  //     });
+  //   }
+  // };
 
-  const debouncedBreadcrumb = useDebounce(breadcrumb, 300);
+  // const debouncedBreadcrumb = useDebounce(breadcrumb, 300);
 
   return (
     <div className="App">
@@ -53,7 +53,7 @@ function App() {
         {coreRules.children.map((c, i) => (
           <Title
             key={i}
-            updateBreadcrumb={updateBreadcrumb}
+            // updateBreadcrumb={updateBreadcrumb}
             node={c}
             level={1}
           />
@@ -79,7 +79,7 @@ const Title = ({ node, level, updateBreadcrumb }) => {
   const Heading = styled[`h${actualLevel}`]``;
   const title = node.text ? (
     <Heading className={advanced ? "advanced_title" : ""}>
-      <Waypoint
+      {/* <Waypoint
         topOffset='60px'
         onEnter={({ previousPosition, currentPosition }) => {
           if (previousPosition === Waypoint.above && currentPosition === Waypoint.inside) {
@@ -91,7 +91,7 @@ const Title = ({ node, level, updateBreadcrumb }) => {
             updateBreadcrumb({ text: ReactDOMServer.renderToString(node.text), level: actualLevel });
           }
         }}
-      />
+      /> */}
       {node.text}
     </Heading>
   ) : null;
