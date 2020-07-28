@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import ReactDOMServer from "react-dom/server";
 import "./App.css";
+import ReactGA from 'react-ga';
 
 import styled from "styled-components";
 import coreRules from "./data/core-rules";
 import { Waypoint } from "react-waypoint";
+
+ReactGA.initialize('UA-000000-01');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const Header = styled.div`
   position: fixed;
