@@ -2484,12 +2484,7 @@ export default {
                       text: (
                         <>
                           {" "}
-                          A model can fight if it is within ½
-                          <>
-                            of another model from their own unit that is within
-                            ½
-                          </>
-                          of an enemy unit.
+                          A model can fight if it is within ½" of another model from their own unit that is within ½" of an enemy unit.
                         </>
                       ),
                       tags: [],
@@ -2505,8 +2500,7 @@ export default {
                     {
                       text: (
                         <>
-                          Number of attacks made by each model that can fight =
-                          A.{" "}
+                          Number of attacks made by each model that can fight = A.
                         </>
                       ),
                       tags: [],
