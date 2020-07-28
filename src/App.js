@@ -31,15 +31,15 @@ const Header = styled.div`
 function App() {
   const [breadcrumb, setBreadcrumb] = useState(["", "", "", "", "", ""]);
   const updateBreadcrumb = ({ level, text }) => {
-    if(level <= 3) {
-      const idx = level - 1;
-      setBreadcrumb((prev) => {
-        const ret = [...prev];
-        ret.fill("", idx);
-        ret[idx] = text;
-        return ret;
-      });
-    }
+    // if(level <= 3) {
+    //   const idx = level - 1;
+    //   setBreadcrumb((prev) => {
+    //     const ret = [...prev];
+    //     ret.fill("", idx);
+    //     ret[idx] = text;
+    //     return ret;
+    //   });
+    // }
   };
 
   return (

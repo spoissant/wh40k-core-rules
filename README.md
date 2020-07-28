@@ -1,6 +1,8 @@
 # wh40k-core-rules
 Warhammer 40k core rules in a more convenient format than a PDF
 
+Visit: [https://spoissant.github.io/wh40k-core-rules/](https://spoissant.github.io/wh40k-core-rules/)
+
 # === React Readme Below ===
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
