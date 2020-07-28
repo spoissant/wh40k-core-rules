@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/wh40k-core-rules/static/css/main.590f4643.chunk.css",
-    "main.js": "/wh40k-core-rules/static/js/main.bf4d0e63.chunk.js",
-    "main.js.map": "/wh40k-core-rules/static/js/main.bf4d0e63.chunk.js.map",
+    "main.js": "/wh40k-core-rules/static/js/main.db91bedd.chunk.js",
+    "main.js.map": "/wh40k-core-rules/static/js/main.db91bedd.chunk.js.map",
     "runtime-main.js": "/wh40k-core-rules/static/js/runtime-main.fd5dd5d3.js",
     "runtime-main.js.map": "/wh40k-core-rules/static/js/runtime-main.fd5dd5d3.js.map",
     "static/js/2.03dfa949.chunk.js": "/wh40k-core-rules/static/js/2.03dfa949.chunk.js",
     "static/js/2.03dfa949.chunk.js.map": "/wh40k-core-rules/static/js/2.03dfa949.chunk.js.map",
     "index.html": "/wh40k-core-rules/index.html",
-    "precache-manifest.054e67f9d18269ae19dd9690a1a6b706.js": "/wh40k-core-rules/precache-manifest.054e67f9d18269ae19dd9690a1a6b706.js",
+    "precache-manifest.ad419a77a888ac4c80026bf2b94c4379.js": "/wh40k-core-rules/precache-manifest.ad419a77a888ac4c80026bf2b94c4379.js",
     "service-worker.js": "/wh40k-core-rules/service-worker.js",
     "static/css/main.590f4643.chunk.css.map": "/wh40k-core-rules/static/css/main.590f4643.chunk.css.map",
     "static/js/2.03dfa949.chunk.js.LICENSE.txt": "/wh40k-core-rules/static/js/2.03dfa949.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.fd5dd5d3.js",
     "static/js/2.03dfa949.chunk.js",
     "static/css/main.590f4643.chunk.css",
-    "static/js/main.bf4d0e63.chunk.js"
+    "static/js/main.db91bedd.chunk.js"
   ]
 }
