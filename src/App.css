@@ -26,15 +26,6 @@ ul:before {
   border-color:transparent #e5e6e2 #e5e6e2 transparent;
 }
 
-li::before {
-  content: '■';
-  color: #9f191e;
-  position: absolute;
-  line-height: 14px;
-  left: -0.8em;          /* Adjust this value so that it appears where you want. */
-  font-size: 2em;      /* Adjust this value so that it appears what size you want. */
-}
-
 li {
   list-style-type: none;
   position: relative;    /* It's needed for setting position to absolute in the next rule. */
@@ -42,6 +33,15 @@ li {
   font-weight: 300;
   line-height: 20px;
   font-size: 18px;
+}
+
+li:before {
+  content: '■';
+  color: #9f191e;
+  position: absolute;
+  line-height: 14px;
+  left: -0.8em;          /* Adjust this value so that it appears where you want. */
+  font-size: 34px;      /* Adjust this value so that it appears what size you want. */
 }
 
 p {
