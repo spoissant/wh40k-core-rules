@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "34c431775c83399b3704afe965c842a0",
+    "revision": "7e781054731029f7a23ebb21202be48d",
     "url": "/wh40k-core-rules/index.html"
   },
   {
-    "revision": "5fca7ba9f933823d4387",
-    "url": "/wh40k-core-rules/static/css/main.590f4643.chunk.css"
+    "revision": "5227f5d04bd1ce73d469",
+    "url": "/wh40k-core-rules/static/css/main.515eb248.chunk.css"
   },
   {
     "revision": "3c9b88a92b0aeef89df3",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wh40k-core-rules/static/js/2.03dfa949.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5fca7ba9f933823d4387",
-    "url": "/wh40k-core-rules/static/js/main.db91bedd.chunk.js"
+    "revision": "5227f5d04bd1ce73d469",
+    "url": "/wh40k-core-rules/static/js/main.1b2ea9ee.chunk.js"
   },
   {
     "revision": "613caf11f73c4a963810",
