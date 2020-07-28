@@ -20,7 +20,7 @@
 		"prefix": "node",
 		"body": [
 			"{",
-			"  text:'$1',",
+			"  text:<>$1</>,",
 			"  tags:[$2],",
 			"  children:[$0],",
 			"},",
