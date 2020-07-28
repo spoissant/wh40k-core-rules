@@ -26,4 +26,4 @@ jobs:
       uses: mattdavis0351/actions/docker-gpr@v1.3.0
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        image-name: wh40krules
+        image-name: wh40k
