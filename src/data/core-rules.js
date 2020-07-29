@@ -1,6 +1,6 @@
 // https://regexr.com/59581
 // regex: \s?([^\n\r]*)
-// list: {text:<>$1",tags:[],children:[],},\n
+// list: {text:<>$1",tags:['main'],children:[],},\n
 import React from "react";
 import styled from "styled-components";
 
@@ -15,21 +15,21 @@ const Keyword = styled.span`
 
 export default {
   text: <>Warhammer 40,000 Core Rules</>,
-  tags: ['core'],
+  tags: ["core"],
   children: [
     {
       text: <>Basic Rules</>,
       level: 1,
-      tags: ['core'],
+      tags: ["core"],
       children: [
         {
           text: <>Army</>,
           level: 3,
-          tags: ['core'],
+          tags: ["core"],
           children: [
             {
               text: null,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -38,7 +38,7 @@ export default {
                       command.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -46,7 +46,7 @@ export default {
             {
               text: <>Keywords</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -55,7 +55,7 @@ export default {
                       <Keyword>Keyword Bold</Keyword> font.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -65,7 +65,7 @@ export default {
                       keyword
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -75,7 +75,7 @@ export default {
                       unit is added to your army.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -83,7 +83,7 @@ export default {
             {
               text: <>Units</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -92,22 +92,22 @@ export default {
                       datasheet.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>Friendly models = all models in the same army.</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>Enemy models = all models in your opponent's army</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>Enemy units = all units in opponent’s army</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -115,7 +115,7 @@ export default {
             {
               text: <>Unit Coherency</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -124,7 +124,7 @@ export default {
                       vertically.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -134,7 +134,7 @@ export default {
                       from own unit.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -144,7 +144,7 @@ export default {
                       coherency with 2 other models from own unit
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -152,7 +152,7 @@ export default {
             {
               text: <>Engagement Range</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -161,7 +161,7 @@ export default {
                       vertically
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -171,7 +171,7 @@ export default {
                       models.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -179,30 +179,17 @@ export default {
           ],
         },
         {
-          text: <>Battlefield</>,
-          level: 3,
-          tags: ['core'],
-          children: [
-            {
-              text: <>Terrain Features</>,
-              level: 4,
-              tags: ['core'],
-              children: [],
-            },
-          ],
-        },
-        {
           text: <>Measuring Distances</>,
           level: 3,
-          tags: ['core'],
+          tags: ["core"],
           children: [
             {
               text: null,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: <>Distances measured in inches (").</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -211,19 +198,19 @@ export default {
                       Always measure closest distance between bases(or hulls).
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: (
                     <>Hull = Any part of a model that does not have a base.</>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>Can measure distances whenever you want.</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -233,7 +220,7 @@ export default {
                       ruleselects which is closest.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -241,11 +228,11 @@ export default {
             {
               text: <>Within and Wholly Within</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: <>Model within = any part of model’s base (or hull).</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -255,17 +242,17 @@ export default {
                       hull).
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>Unit within = any model within.</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>Unit wholly within = every model wholly within</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -275,21 +262,25 @@ export default {
         {
           text: <>Dice</>,
           level: 3,
-          tags: ['core'],
+          tags: ["core"],
           children: [
             {
               text: null,
-              tags: ['core'],
+              tags: ["core"],
               children: [
-                { text: <>D6 = A six-sided dice.</>, tags: ['core'], children: [] },
+                {
+                  text: <>D6 = A six-sided dice.</>,
+                  tags: ["core"],
+                  children: [],
+                },
                 {
                   text: <>D3 = D6 divided by 2 (rounding up).</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>All modifiers cumulative.</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -299,7 +290,7 @@ export default {
                       division,multiplication, addition, then subtraction.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -309,7 +300,7 @@ export default {
                       applied.Dice roll cannot be modified to less than 1.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -317,7 +308,7 @@ export default {
             {
               text: <>Re-Rolls</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -325,17 +316,17 @@ export default {
                       <Rule>Re-roll:</Rule> Roll dice again.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>Re-rolls are applied before modifiers (if any).</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>A dice can never be re-rolled more than once.</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -345,7 +336,7 @@ export default {
                       re-rolls, but before modifiers (if any).
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -353,7 +344,7 @@ export default {
             {
               text: <>Roll-Offs</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -362,16 +353,20 @@ export default {
                       wins.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
-                { text: <>Roll again if a tie.</>, tags: ['core'], children: [] },
+                {
+                  text: <>Roll again if a tie.</>,
+                  tags: ["core"],
+                  children: [],
+                },
               ],
             },
             {
               text: <>Sequencing</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -380,7 +375,7 @@ export default {
                       player whose turn it is chooses the order to resolve them.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -388,7 +383,7 @@ export default {
             {
               text: <>Starting Strength, Half-Strength and Destroyed Units</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -397,7 +392,7 @@ export default {
                       when it is added to your army.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -406,7 +401,7 @@ export default {
                       When a model is destroyed, remove it from the battlefield.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -416,7 +411,7 @@ export default {
                       is less than half its Starting Strength.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -426,7 +421,7 @@ export default {
                       said to be destroyed.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -438,12 +433,12 @@ export default {
     {
       text: <>Datasheet</>,
       level: 2,
-      tags: ['core'],
+      tags: ["core"],
       children: [
         {
           text: <>Damage Tables</>,
           level: 4,
-          tags: ['core'],
+          tags: ["core"],
           children: [
             {
               text: (
@@ -452,7 +447,7 @@ export default {
                   it loses wounds.
                 </>
               ),
-              tags: ['core'],
+              tags: ["core"],
               children: [],
             },
           ],
@@ -460,11 +455,11 @@ export default {
         {
           text: <>Modifying Characteristics</>,
           level: 4,
-          tags: ['core'],
+          tags: ["core"],
           children: [
             {
               text: <>All characteristic modifiers are cumulative.</>,
-              tags: ['core'],
+              tags: ["core"],
               children: [],
             },
             {
@@ -474,17 +469,17 @@ export default {
                   multiplication, addition, then subtraction.
                 </>
               ),
-              tags: ['core'],
+              tags: ["core"],
               children: [],
             },
             {
               text: <>Round fractions up after applying all modifiers.</>,
-              tags: ['core'],
+              tags: ["core"],
               children: [],
             },
             {
               text: <>S, T, A and Ld can never be modified below 1.</>,
-              tags: ['core'],
+              tags: ["core"],
               children: [],
             },
             {
@@ -494,7 +489,7 @@ export default {
                   time it moves.
                 </>
               ),
-              tags: ['core'],
+              tags: ["core"],
               children: [],
             },
             {
@@ -504,13 +499,590 @@ export default {
                   characteristic required.
                 </>
               ),
-              tags: ['core'],
+              tags: ["core"],
               children: [],
             },
             {
               text: <>Characteristic of ‘-’ can never be modified.</>,
-              tags: ['core'],
+              tags: ["core"],
               children: [],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      text: <>Stragegic Reserves</>,
+      level: 3,
+      tags: ["main"],
+      children: [
+        {
+          text: <>Placing Units into Strategic Reserves</>,
+          level: 4,
+          tags: ["main"],
+          children: [],
+        },
+        {
+          text: <>Arriving from Strategic Reserves</>,
+          level: 4,
+          tags: ["main"],
+          children: [],
+        },
+        {
+          text: <>Setting up Strategic Reserve Units</>,
+          tags: ["main"],
+          children: [],
+        },
+        {
+          text: <>Advanced Rules</>,
+          level: 4,
+          tags: ["main", "advanced"],
+          children: [
+            {
+              text: <>Aircraft and Strategic Reserves</>,
+              level: 4,
+              tags: ["main"],
+              children: [],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      text: <>Actions</>,
+      level: 2,
+      tags: ["main"],
+      children: [
+        {
+          text: <>Performing Actions</>,
+          level: 3,
+          tags: ["main"],
+          children: [],
+        },
+        {
+          text: <>Performing Psychic Actions</>,
+          level: 3,
+          tags: ["main"],
+          children: [],
+        },
+      ],
+    },
+    {
+      text: <>Terrain Features</>,
+      level: 2,
+      tags: ["main"],
+      children: [
+        {
+          text: <>Terrain Categories</>,
+          level: 3,
+          tags: ["main"],
+          children: [
+            {
+              text: null,
+              level: 4,
+              tags: ["main"],
+              children: [
+                {
+                  text: (
+                    <>
+                      Each terrain feature belongs to one of the following
+                      categories: Hills, Obstacles, Area Terrain or Buildings.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      Some models can gain the nenefits of cover fom some
+                      Terrain features (see terrain traits).
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+            {
+              text: <>Hills</>,
+              level: 4,
+              tags: ["main"],
+              children: [
+                {
+                  text: (
+                    <>
+                      Hills are considered to be part of the battlefield rather
+                      than a terrain feature.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>Models move over hils using normal rules for movement.</>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      Models use normal rules to determine if a model behind a
+                      hill is visible.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: <>Hill cannot be attacked.</>,
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+            {
+              text: <>Obstacles</>,
+              level: 4,
+              tags: ["main"],
+              children: [
+                {
+                  text: (
+                    <>
+                      Models move over Obstacles using normal rules for
+                      movement.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      Models use normal rules to determine if a model behind an
+                      Obstacle is visible.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: <>Obstacles cannot be attacked.</>,
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      <Keyword>Infantry</Keyword>, <Keyword>Beasts</Keyword> and{" "}
+                      <Keyword>Swarm</Keyword> models receive the{" "}
+                      <Rule>benefit of cover</Rule> while within 3", unless a
+                      straight line can be drawn from the attacker to ALL parts
+                      of the target model without it passing over or through
+                      this terrain feature.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+            {
+              text: <>Area Terrain</>,
+              level: 4,
+              tags: ["main"],
+              children: [
+                {
+                  text: <>Area Terrain has a footprint.</>,
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      Footpring = boundary of terrain feature at ground level.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      Models move over Area Terrain using normal rules for
+                      movement.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      Models use normal rules to determine if a model behind
+                      Area Terrain is visible.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: <>Are Terrain cannot be attacked.</>,
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      <Keyword>Infantry</Keyword>, <Keyword>Beasts</Keyword> and{" "}
+                      <Keyword>Swarm</Keyword> models receive the{" "}
+                      <Rule>benefits of cover</Rule> while they are within it.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+            {
+              text: <>Buildings</>,
+              level: 4,
+              tags: ["main"],
+              children: [
+                {
+                  text: (
+                    <>
+                      Buildings are considered to be units, rather than terrain
+                      features.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: <>Models cannot move across Buildings.</>,
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      Models use normal rules to determine if a model behind a
+                      building is visible.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: <>Enemy Buildings can be attacked.</>,
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          text: <>Terrain Traits</>,
+          level: 3,
+          tags: ["main"],
+          children: [
+            {
+              text: <>Defensible</>,
+              level: 5,
+              tags: ["main"],
+              children: [
+                {
+                  text: (
+                    <>
+                      <Keyword>Infantry</Keyword> units can Hold Steady or Set
+                      to Defend (if no enemy within Engagement Range).
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      <Rule>Hold Steady</Rule>: Overwatch attacks hit on 5+.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      <Rule>Set to Defend:</Rule>: Cannot fire Overwatch but add
+                      1 to hit rolls in next Fight phase.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+            {
+              text: <>Defence Line</>,
+              level: 5,
+              tags: ["main"],
+              children: [
+                {
+                  text: (
+                    <>
+                      Can make a charge move against a unit within 1" of this
+                      terrain feature.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: <>Can fight if within 2" of ennemy</>,
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+            {
+              text: <>Breachable</>,
+              level: 5,
+              tags: ["main"],
+              children: [
+                {
+                  text: (
+                    <>
+                      <Keyword>Infantry</Keyword>, <Keyword>Beasts</Keyword> and{" "}
+                      <Keyword>Swarm</Keyword> can move through walls, girder,
+                      chains and foliage.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+            {
+              text: <>Difficult Ground</>,
+              level: 5,
+              tags: ["main"],
+              children: [
+                {
+                  text: (
+                    <>
+                      Substract 2" when making a Normal Move, Advance, Fall Back
+                      or Charge move over this terrain feature (unlesss moving
+                      unit can <Keyword>Fly</Keyword>).
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+            {
+              text: <>Dense Cover</>,
+              level: 5,
+              tags: ["main"],
+              children: [
+                {
+                  text: (
+                    <>
+                      Substract 1 from hit rolls made for ranged weapons if at
+                      least 3" tall and no lines can be drawn without passing
+                      over this terrain feature between attacking model and any
+                      one model in target unit.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      Does not apply to models that are only shooting through
+                      their own terrain feature.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      No penalty when shooting at <Keyword>Aircraft</Keyword>{" "}
+                      and units with W characteristic of 18+.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+            {
+              text: <>Unstable Position</>,
+              level: 5,
+              tags: ["main"],
+              children: [
+                {
+                  text: (
+                    <>
+                      Models cannot be set up or end a move on top of this
+                      terrain feature.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+            {
+              text: <>Exposed Position</>,
+              level: 5,
+              tags: ["main"],
+              children: [
+                {
+                  text: (
+                    <>
+                      Models do not receive <Rule>benefits of cover</Rule> while
+                      on top of this terrain feature.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+            {
+              text: <>Obscuring</>,
+              level: 5,
+              tags: ["main"],
+              children: [
+                {
+                  text: <>Blocks visibility if at least 5" tall.</>,
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: <>Models on or within can see and be seen normally.</>,
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      <Keyword>Aircraft</Keyword> and models with W
+                      characteristic of 18+ are visible and can be targeted
+                      through this terrain feature. (the reverse is not true)
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+            {
+              text: <>Light Cover</>,
+              level: 5,
+              tags: ["main"],
+              children: [
+                {
+                  text: (
+                    <>
+                      +1 to saving throws against ranged weapons for models
+                      receiveing the <Rule>benefits of cover</Rule> from this
+                      terrain feature.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: <>Invulnerable saving throws unaffected.</>,
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+            {
+              text: <>Heavy Cover</>,
+              level: 5,
+              tags: ["main"],
+              children: [
+                {
+                  text: (
+                    <>
+                      +1 to saving throws against melee weapons (unless
+                      attacking model has made a charge move this turn) for
+                      models receiveing the <Rule>benefits of cover</Rule> from
+                      this terrain feature.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: <>Invulnerable saving throws unaffected.</>,
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+            {
+              text: <>Scaleable</>,
+              level: 5,
+              tags: ["main"],
+              children: [
+                {
+                  text: (
+                    <>
+                      Only <Keyword>Infantry</Keyword>,{" "}
+                      <Keyword>Beasts</Keyword>, <Keyword>Swarm</Keyword> and{" "}
+                      <Keyword>Fly</Keyword> models can be set up or end a move
+                      on top of this terrain feature (exluding ground floor)
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      <Keyword>Infantry</Keyword>, <Keyword>Beasts</Keyword> and{" "}
+                      <Keyword>Swarm</Keyword> models can move through the
+                      floors, ceilings and gantries.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
+            },
+            {
+              text: <>Inspiring</>,
+              level: 5,
+              tags: ["main"],
+              children: [
+                {
+                  text: <>+1 Ld if wholly within 6"</>,
+                  tags: ["main"],
+                  children: [],
+                },
+                {
+                  text: (
+                    <>
+                      Can be given <Keyword>Keyword(s)</Keyword> in which case
+                      the effect only applies to matching units.
+                    </>
+                  ),
+                  tags: ["main"],
+                  children: [],
+                },
+              ],
             },
           ],
         },
@@ -519,12 +1091,12 @@ export default {
     {
       text: <>The Battle Round</>,
       level: 1,
-      tags: ['core'],
+      tags: ["core"],
       children: [
         {
           text: <>Out of Phase Rules</>,
           level: 4,
-          tags: ['core'],
+          tags: ["core"],
           children: [
             {
               text: (
@@ -533,7 +1105,7 @@ export default {
                   apply in that phase continue to apply.
                 </>
               ),
-              tags: ['core'],
+              tags: ["core"],
               children: [],
             },
             {
@@ -543,7 +1115,7 @@ export default {
                   phase rules.
                 </>
               ),
-              tags: ['core'],
+              tags: ["core"],
               children: [],
             },
           ],
@@ -551,7 +1123,7 @@ export default {
         {
           text: <>Command Phase</>,
           level: 2,
-          tags: ['core'],
+          tags: ["core"],
           children: [
             {
               text: (
@@ -560,7 +1132,7 @@ export default {
                   Battleforged.
                 </>
               ),
-              tags: ['core'],
+              tags: ["core"],
               children: [],
             },
             {
@@ -570,12 +1142,12 @@ export default {
                   the Movement phase (pg 10).
                 </>
               ),
-              tags: ['core'],
+              tags: ["core"],
               children: [],
             },
             {
               text: <>Progress to the Movement phase (pg 10).</>,
-              tags: ['core'],
+              tags: ["core"],
               children: [],
             },
           ],
@@ -583,11 +1155,11 @@ export default {
         {
           text: <>Movement Phase</>,
           level: 2,
-          tags: ['core'],
+          tags: ["core"],
           children: [
             {
               text: null,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -597,25 +1169,25 @@ export default {
                       not yet arrived.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
-                { text: <>1. Move Units</>, tags: ['core'], children: [] },
-                { text: <>2. Reinforcements</>, tags: ['core'], children: [] },
+                { text: <>1. Move Units</>, tags: ["core"], children: [] },
+                { text: <>2. Reinforcements</>, tags: ["core"], children: [] },
               ],
             },
             {
               text: <>1. Move Units</>,
               level: 3,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: null,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: <>Select a unit in your army to move.</>,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -625,7 +1197,7 @@ export default {
                           Advance or Remain Stationary.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -635,12 +1207,12 @@ export default {
                           models can only either Fall Back or Remain Stationary.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
                       text: <>Select another unit in your army to move.</>,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -650,7 +1222,7 @@ export default {
                           Reinforcements step (pg 11).
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -658,7 +1230,7 @@ export default {
                 {
                   text: <>Normal Move</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -666,7 +1238,7 @@ export default {
                           <Rule>Normal Move:</Rule> Models move up to M".
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -676,7 +1248,7 @@ export default {
                           models.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -684,7 +1256,7 @@ export default {
                 {
                   text: <>Advance</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -692,7 +1264,7 @@ export default {
                           <Rule>Advance:</Rule> Models move up to M+D6".
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -701,14 +1273,14 @@ export default {
                           Cannot move within Engagement Range of enemy models.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
                       text: (
                         <>Units that Advance cannot shoot or charge this turn</>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -716,7 +1288,7 @@ export default {
                 {
                   text: <>Remain Stationary</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -725,7 +1297,7 @@ export default {
                           this phase.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -733,7 +1305,7 @@ export default {
                 {
                   text: <>Fall Back</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -741,12 +1313,12 @@ export default {
                           <Rule>Fall Back</Rule>: Models move up to M".
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
                       text: <>Units that Fall Back cannot charge this turn.</>,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -756,7 +1328,7 @@ export default {
                           powers this turn unless they are Titanic.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -766,7 +1338,7 @@ export default {
             {
               text: <>2. Reinforcements</>,
               level: 3,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -775,7 +1347,7 @@ export default {
                       battle in a location other than the battlefield.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -786,7 +1358,7 @@ export default {
                       locations other than the battlefield.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -796,7 +1368,7 @@ export default {
                       Fall Back or Remain Stationary this turn.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -806,7 +1378,7 @@ export default {
                       turn.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -816,7 +1388,7 @@ export default {
                       the end of the battle counts as destroyed.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -826,7 +1398,7 @@ export default {
                       progress to the Psychic phase (pg 14).
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -834,12 +1406,12 @@ export default {
             {
               text: <>Advanced Rules</>,
               level: 4,
-              tags: ['advanced', 'core'],
+              tags: ["advanced", "core"],
               children: [
                 {
                   text: <>Moving Over Terrain</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -848,7 +1420,7 @@ export default {
                           less in height.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -858,7 +1430,7 @@ export default {
                           but can climb up and down them.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -866,7 +1438,7 @@ export default {
                 {
                   text: <>Flying</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -876,7 +1448,7 @@ export default {
                           when they Fall Back.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -887,7 +1459,7 @@ export default {
                           when they Fall Back.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -895,12 +1467,12 @@ export default {
                 {
                   text: <>Transports</>,
                   level: 3,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: <>Transport Capacity</>,
                       level: 5,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [
                         {
                           text: (
@@ -910,7 +1482,7 @@ export default {
                               <Keyword>Transport</Keyword>.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -920,7 +1492,7 @@ export default {
                               <Keyword>Transport</Keyword>.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                       ],
@@ -928,7 +1500,7 @@ export default {
                     {
                       text: <>Embark</>,
                       level: 4,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [
                         {
                           text: (
@@ -939,7 +1511,7 @@ export default {
                               of it.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -950,7 +1522,7 @@ export default {
                               Engagement Range of any enemy models.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -960,7 +1532,7 @@ export default {
                               phase.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -971,7 +1543,7 @@ export default {
                               <Keyword>Transport</Keyword>.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                       ],
@@ -979,7 +1551,7 @@ export default {
                     {
                       text: <>Disembark</>,
                       level: 4,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [
                         {
                           text: (
@@ -989,7 +1561,7 @@ export default {
                               phase.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -999,7 +1571,7 @@ export default {
                               <Keyword>Transport</Keyword> moves.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -1010,7 +1582,7 @@ export default {
                               within Engagement Range of any enemy models.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -1020,7 +1592,7 @@ export default {
                               this turn.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                       ],
@@ -1028,7 +1600,7 @@ export default {
                     {
                       text: <>Destroyed Transports</>,
                       level: 4,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [
                         {
                           text: (
@@ -1037,14 +1609,14 @@ export default {
                               resolve its Explodes ability (if it has one).
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
                           text: (
                             <>Any units embarked within must then disembark.</>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -1054,7 +1626,7 @@ export default {
                               each 1, one model is destroyed.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -1064,7 +1636,7 @@ export default {
                               Heroic Interventions this turn.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                       ],
@@ -1074,12 +1646,12 @@ export default {
                 {
                   text: <>Aircraft</>,
                   level: 3,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: <>Minimum Move</>,
                       level: 4,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [
                         {
                           text: (
@@ -1088,7 +1660,7 @@ export default {
                               least their minimum M".
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -1099,7 +1671,7 @@ export default {
                               Reserves).
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                       ],
@@ -1107,7 +1679,7 @@ export default {
                     {
                       text: <>Aircraft Egagement Range</>,
                       level: 4,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [
                         {
                           text: (
@@ -1116,7 +1688,7 @@ export default {
                               <Keyword>Aircraft</Keyword>’s Engagement Range.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -1126,7 +1698,7 @@ export default {
                               (and their bases) when they make any kind of move.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -1137,7 +1709,7 @@ export default {
                               enemy models.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -1148,7 +1720,7 @@ export default {
                               <Keyword>Aircraft</Keyword>
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                       ],
@@ -1161,7 +1733,7 @@ export default {
                         </>
                       ),
                       level: 4,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [
                         {
                           text: (
@@ -1172,7 +1744,7 @@ export default {
                               moving can <Keyword>Fly</Keyword>).
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                       ],
@@ -1186,11 +1758,11 @@ export default {
         {
           text: <>Psychic Phase</>,
           level: 2,
-          tags: ['core'],
+          tags: ["core"],
           children: [
             {
               text: null,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -1199,7 +1771,7 @@ export default {
                       manifest its psychic powers.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -1209,7 +1781,7 @@ export default {
                       manifest its psychic powers.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -1219,7 +1791,7 @@ export default {
                       psychic powers, progress to the Shooting phase (pg 15).
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -1227,11 +1799,11 @@ export default {
             {
               text: <>Psychic Powers</>,
               level: 3,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: null,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1239,7 +1811,7 @@ export default {
                           All <Keyword>Psykers</Keyword> know Smite.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1249,7 +1821,7 @@ export default {
                           psychic powers, as described on their datasheets.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1257,11 +1829,11 @@ export default {
                 {
                   text: <>Manifesting Psychic Powers</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: <>Select psychic power.</>,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1271,7 +1843,7 @@ export default {
                           once per battle round, unless that power is Smite.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1281,7 +1853,7 @@ export default {
                           Psychic test.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1291,7 +1863,7 @@ export default {
                           taking a Deny the Witch test.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1301,12 +1873,12 @@ export default {
                           power’s effects.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
                       text: <>Select another psychic power.</>,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1314,7 +1886,7 @@ export default {
                 {
                   text: <>Psychic Tests</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1323,7 +1895,7 @@ export default {
                           exceeds psychic power’s warp charge.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1333,7 +1905,7 @@ export default {
                           <Keyword>Psyker</Keyword> suffers Perils of the Warp.{" "}
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1341,7 +1913,7 @@ export default {
                 {
                   text: <>Deny the Witch</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1351,7 +1923,7 @@ export default {
                           Psychic test.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1361,7 +1933,7 @@ export default {
                           power.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1369,7 +1941,7 @@ export default {
                 {
                   text: <>Smite</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1378,7 +1950,7 @@ export default {
                           required to manifest Smite.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1388,7 +1960,7 @@ export default {
                           manifest Smite made in this phase.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1399,7 +1971,7 @@ export default {
                           suffers D3 mortal wounds.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1409,7 +1981,7 @@ export default {
                           instead suffers D6 mortal wounds.{" "}
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1417,7 +1989,7 @@ export default {
                 {
                   text: <>Perils of the Warp</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1427,7 +1999,7 @@ export default {
                           suffers D3 mortal wounds.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1437,7 +2009,7 @@ export default {
                           psychic power fails to manifest.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1448,7 +2020,7 @@ export default {
                           other unit within 6" suffers D3 mortal wounds.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1460,15 +2032,15 @@ export default {
         {
           text: <>Shooting Phase</>,
           level: 2,
-          tags: ['core'],
+          tags: ["core"],
           children: [
             {
               text: null,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: <>Select a unit from your army to shoot with.</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -1479,12 +2051,12 @@ export default {
                       are equipped with.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>Select another unit from your army to shoot with.</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -1494,7 +2066,7 @@ export default {
                       Charge phase (pg 19).
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -1502,7 +2074,7 @@ export default {
             {
               text: <>Select Targets</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -1511,7 +2083,7 @@ export default {
                       resolved.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -1522,7 +2094,7 @@ export default {
                       weapon.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -1533,7 +2105,7 @@ export default {
                       next.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -1544,7 +2116,7 @@ export default {
                       before resolving attacks with the next.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -1552,7 +2124,7 @@ export default {
             {
               text: <>Locked in Combat</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -1561,7 +2133,7 @@ export default {
                       of any enemy units.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -1571,7 +2143,7 @@ export default {
                       any friendly units.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -1579,7 +2151,7 @@ export default {
             {
               text: <>Number of Attacks</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -1588,12 +2160,12 @@ export default {
                       same target unit.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>Number of attacks = number after weapon’s type. </>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -1601,12 +2173,12 @@ export default {
             {
               text: <>Advanced Rules</>,
               level: 4,
-              tags: ['advanced', 'core'],
+              tags: ["advanced", "core"],
               children: [
                 {
                   text: <>Big Guns Never Tire</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1616,7 +2188,7 @@ export default {
                           even if within Engagement Range of enemy units.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1628,7 +2200,7 @@ export default {
                           models remain within their Engagement Range.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1640,7 +2212,7 @@ export default {
                           any enemy
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1648,7 +2220,7 @@ export default {
                 {
                   text: <>Look Out, Sir</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1660,7 +2232,7 @@ export default {
                           unless it is the closest target.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1670,18 +2242,18 @@ export default {
             {
               text: <>Ranged Weapon Types</>,
               level: 3,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: <>Assault</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
                         <>Can be shot even if firing model’s unit Advanced.</>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1691,7 +2263,7 @@ export default {
                           Advanced.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1699,7 +2271,7 @@ export default {
                 {
                   text: <>Heavy</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1709,7 +2281,7 @@ export default {
                           this turn.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1717,7 +2289,7 @@ export default {
                 {
                   text: <>Rapid Fire</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1726,7 +2298,7 @@ export default {
                           range.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1734,7 +2306,7 @@ export default {
                 {
                   text: <>Grenade</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1742,7 +2314,7 @@ export default {
                           Only one model can use a Grenade when its unit shoots.{" "}
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1750,7 +2322,7 @@ export default {
                 {
                   text: <>Pistol</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1759,14 +2331,14 @@ export default {
                           Engagement Range of enemy unit.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
                       text: (
                         <>Cannot be shot alongside any other type of weapon.</>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1774,12 +2346,12 @@ export default {
                 {
                   text: <>Advanced Rules</>,
                   level: 4,
-                  tags: ['advanced', 'core'],
+                  tags: ["advanced", "core"],
                   children: [
                     {
                       text: <>Blast Weapons</>,
                       level: 4,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [
                         {
                           text: (
@@ -1789,7 +2361,7 @@ export default {
                               number of attacks against units with 11+ models.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -1799,7 +2371,7 @@ export default {
                               firing unit’s Engagement Range.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                       ],
@@ -1811,12 +2383,12 @@ export default {
             {
               text: <>Making Attacks</>,
               level: 3,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: <>1. Hit Roll</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1826,7 +2398,7 @@ export default {
                           BS. Otherwise attack fails.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1837,24 +2409,24 @@ export default {
                           Otherwise attack fails.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
                       text: <>Unmodified hit rolls of 1 always fail.</>,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
                       text: <>Unmodified hit rolls of 6 always succeed.</>,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
                       text: (
                         <>Hit rolls cannot be modified by more than -1 or +1.</>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1862,7 +2434,7 @@ export default {
                 {
                   text: <>2. Wound Roll</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1873,17 +2445,17 @@ export default {
                           result. Otherwise attack fails.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
                       text: <>Unmodified wound rolls of 1 always fail.</>,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
                       text: <>Unmodified wound rolls of 6 always succeed.</>,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1892,7 +2464,7 @@ export default {
                           Wound rolls cannot be modified by more than -1 or +1.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1900,7 +2472,7 @@ export default {
                 {
                   text: <>3. Allocate Attack</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1912,7 +2484,7 @@ export default {
                           that model.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1920,7 +2492,7 @@ export default {
                 {
                   text: <>4. Saving Throw</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1931,12 +2503,12 @@ export default {
                           suffers damage. Otherwise attack is saved.{" "}
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
                       text: <>Unmodified saving throws of 1 always fail.</>,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1944,7 +2516,7 @@ export default {
                 {
                   text: <>5. Inflict Damage</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -1953,7 +2525,7 @@ export default {
                           a number of wounds equal to the attack’s D.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -1963,7 +2535,7 @@ export default {
                           damage inflicted by that attack is lost.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -1971,12 +2543,12 @@ export default {
                 {
                   text: <>Advanced Rules</>,
                   level: 4,
-                  tags: ['advanced', 'core'],
+                  tags: ["advanced", "core"],
                   children: [
                     {
                       text: <>Invulnerable Saves</>,
                       level: 4,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [
                         {
                           text: (
@@ -1985,7 +2557,7 @@ export default {
                               is never modified by attacking weapon’s AP.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -1995,7 +2567,7 @@ export default {
                               instead of its normal Sv
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                       ],
@@ -2003,7 +2575,7 @@ export default {
                     {
                       text: <>Mortal Wounds</>,
                       level: 4,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [
                         {
                           text: (
@@ -2012,7 +2584,7 @@ export default {
                               model in the unit to lose one wound.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -2022,7 +2594,7 @@ export default {
                               wounds.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                         {
@@ -2033,7 +2605,7 @@ export default {
                               saved.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                       ],
@@ -2041,7 +2613,7 @@ export default {
                     {
                       text: <>Ignoring Wounds</>,
                       level: 4,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [
                         {
                           text: (
@@ -2050,7 +2622,7 @@ export default {
                               each wound suffered.
                             </>
                           ),
-                          tags: ['core'],
+                          tags: ["core"],
                           children: [],
                         },
                       ],
@@ -2064,11 +2636,11 @@ export default {
         {
           text: <>Charge Phase</>,
           level: 2,
-          tags: ['core'],
+          tags: ["core"],
           children: [
             {
               text: null,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -2078,17 +2650,17 @@ export default {
                       Interventions.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>1. Charges</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>2. Heroic Interventions</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -2096,27 +2668,27 @@ export default {
             {
               text: <>1. Charges</>,
               level: 3,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: null,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: <>Select a unit from your army to charge with.</>,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
                       text: <>Charge with that unit (see below).</>,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
                       text: (
                         <>Select another unit from your army to charge with.</>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2126,7 +2698,7 @@ export default {
                           Heroic Interventions step (pg 20).
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2134,16 +2706,20 @@ export default {
                 {
                   text: <>Charging with a Unit</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
                         <>Declare targets of the charge (must be within 12").</>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
-                    { text: <> Charge roll = 2D6".</>, tags: ['core'], children: [] },
+                    {
+                      text: <> Charge roll = 2D6".</>,
+                      tags: ["core"],
+                      children: [],
+                    },
                     {
                       text: (
                         <>
@@ -2151,7 +2727,7 @@ export default {
                           Range of all targets, charge fails.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2160,7 +2736,7 @@ export default {
                           If charge successful, models make their charge move.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2170,7 +2746,7 @@ export default {
                           any unit that was not the target of the charge.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2180,11 +2756,11 @@ export default {
             {
               text: <>2. Heroic Interventions</>,
               level: 3,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: null,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -2193,7 +2769,7 @@ export default {
                           perform a Heroic Intervention.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2203,7 +2779,7 @@ export default {
                           units are in Engagement Range.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2214,7 +2790,7 @@ export default {
                           vertical to perform a Heroic Intervention.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2224,7 +2800,7 @@ export default {
                           perform a Heroic Intervention.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2235,7 +2811,7 @@ export default {
                           phase (pg 21).
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2243,7 +2819,7 @@ export default {
                 {
                   text: <>Performing a Heroic Intervention</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -2251,12 +2827,12 @@ export default {
                           <Rule>Heroic Intervention</Rule>: Move up to 3".
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
                       text: <>Must end closer to the closest enemy model.</>,
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2266,12 +2842,12 @@ export default {
             {
               text: <>Advanced Rules</>,
               level: 4,
-              tags: ['advanced', 'core'],
+              tags: ["advanced", "core"],
               children: [
                 {
                   text: <>Charging Over Terrain</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -2280,7 +2856,7 @@ export default {
                           or less in height.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2290,7 +2866,7 @@ export default {
                           but can climb up and down them.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2298,7 +2874,7 @@ export default {
                 {
                   text: <>Flying when Charging</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -2307,7 +2883,7 @@ export default {
                           models when they make a charge move.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2318,7 +2894,7 @@ export default {
                           other model when they make a charge move.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2326,7 +2902,7 @@ export default {
                 {
                   text: <>Overwatch</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -2335,7 +2911,7 @@ export default {
                           charge targets that can fire Overwatch can do so.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2345,7 +2921,7 @@ export default {
                           Engagement Range.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2355,7 +2931,7 @@ export default {
                           only hit on unmodified 6s.{" "}
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2367,11 +2943,11 @@ export default {
         {
           text: <>Fight Phase</>,
           level: 2,
-          tags: ['core'],
+          tags: ["core"],
           children: [
             {
               text: null,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -2380,17 +2956,7 @@ export default {
                       fight with.
                     </>
                   ),
-                  tags: ['core'],
-                  children: [],
-                },
-                {
-                  text: (
-                    <>
-                      When a unit fights, it piles in, then it makes close
-                      combat attacks, then it consolidates.
-                    </>
-                  ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -2401,7 +2967,7 @@ export default {
                       time.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
@@ -2411,7 +2977,7 @@ export default {
                       (pg 23).
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -2419,7 +2985,7 @@ export default {
             {
               text: <>Charging Units Fight First</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -2428,7 +2994,7 @@ export default {
                       other units.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -2436,13 +3002,24 @@ export default {
             {
               text: <>Fight</>,
               level: 4,
-              tags: ['core'],
-              children: [],
+              tags: ["core"],
+              children: [
+                {
+                  text: (
+                    <>
+                      When a unit fights, it piles in, then it makes close
+                      combat attacks, then it consolidates.
+                    </>
+                  ),
+                  tags: ["core"],
+                  children: [],
+                },
+              ],
             },
             {
               text: <>Pile In</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -2450,12 +3027,12 @@ export default {
                       <Rule>Pile in</Rule>: Move up to 3".
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>Must end closer to the closest enemy model.</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -2463,12 +3040,12 @@ export default {
             {
               text: <>Make Close Combat Attacks</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: <>Which Models Fight</>,
                   level: 5,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -2477,17 +3054,19 @@ export default {
                           enemy unit.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
                       text: (
                         <>
                           {" "}
-                          A model can fight if it is within ½" of another model from their own unit that is within ½" of an enemy unit.
+                          A model can fight if it is within ½" of another model
+                          from their own unit that is within ½" of an enemy
+                          unit.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2495,15 +3074,16 @@ export default {
                 {
                   text: <>Number of Attacks</>,
                   level: 5,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
                         <>
-                          Number of attacks made by each model that can fight = A.
+                          Number of attacks made by each model that can fight =
+                          A.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2511,7 +3091,7 @@ export default {
                 {
                   text: <>Select Targets</>,
                   level: 5,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -2522,7 +3102,7 @@ export default {
                           Intervention this turn.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2532,7 +3112,7 @@ export default {
                           resolved.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2543,7 +3123,7 @@ export default {
                           against the next.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2551,7 +3131,7 @@ export default {
                 {
                   text: <>Select Weapons</>,
                   level: 5,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -2559,7 +3139,7 @@ export default {
                           Each close combat attack is made with a melee weapon.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2569,7 +3149,7 @@ export default {
                           profile if it has no other melee weapons.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2580,7 +3160,7 @@ export default {
                           resolved before resolving attacks with the next.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2590,7 +3170,7 @@ export default {
             {
               text: <>Consolidate</>,
               level: 4,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -2598,12 +3178,12 @@ export default {
                       <Rule>Consolidate</Rule>: Move up to 3".
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>Must end closer to the closest enemy model.</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -2613,11 +3193,11 @@ export default {
         {
           text: <>Morale Phase</>,
           level: 2,
-          tags: ['core'],
+          tags: ["core"],
           children: [
             {
               text: null,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: (
@@ -2627,17 +3207,17 @@ export default {
                       out-ofcoherency models.
                     </>
                   ),
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>1. Morale Tests</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
                 {
                   text: <>2. Unit Coherency Checks</>,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [],
                 },
               ],
@@ -2645,11 +3225,11 @@ export default {
             {
               text: <>1. Morale Tests</>,
               level: 3,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: null,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -2658,7 +3238,7 @@ export default {
                           their army that have suffered casualties this turn.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2669,7 +3249,7 @@ export default {
                           their remaining units, one at a time.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2679,7 +3259,7 @@ export default {
                           the Unit Coherency Checks step (see opposite).
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2687,7 +3267,7 @@ export default {
                 {
                   text: <>Morale Tests</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -2696,7 +3276,7 @@ export default {
                           destroyed this turn.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2706,7 +3286,7 @@ export default {
                           flee).
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2716,7 +3296,7 @@ export default {
                           other models must take Combat Attrition tests.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2724,7 +3304,7 @@ export default {
                 {
                   text: <>Combat Attrition Tests</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -2734,7 +3314,7 @@ export default {
                           additional model flees.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2744,7 +3324,7 @@ export default {
                           below Half-strength.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2754,11 +3334,11 @@ export default {
             {
               text: <>2. Unit Coherency Checks</>,
               level: 3,
-              tags: ['core'],
+              tags: ["core"],
               children: [
                 {
                   text: null,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -2767,7 +3347,7 @@ export default {
                           unit coherency (pg 4).
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2777,7 +3357,7 @@ export default {
                           any), the Morale phase ends.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2787,7 +3367,7 @@ export default {
                           ends, the next player’s turn begins (pg 9).
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2799,17 +3379,17 @@ export default {
         {
           text: <>Missions</>,
           level: 2,
-          tags: ['core'],
+          tags: ["core"],
           children: [
             {
               text: <>Advanced Rules</>,
               level: 4,
-              tags: ['advanced', 'core'],
+              tags: ["advanced", "core"],
               children: [
                 {
                   text: <>Objective Markers</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -2817,7 +3397,7 @@ export default {
                           <Rule>Objective marker</Rule>: 40mm round marker
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2828,7 +3408,7 @@ export default {
                           horizontally and 5" vertically.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2838,7 +3418,7 @@ export default {
                           in range.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                     {
@@ -2848,7 +3428,7 @@ export default {
                           control objective markers.
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],
@@ -2856,7 +3436,7 @@ export default {
                 {
                   text: <>Objective Secured</>,
                   level: 4,
-                  tags: ['core'],
+                  tags: ["core"],
                   children: [
                     {
                       text: (
@@ -2866,7 +3446,7 @@ export default {
                           this ability
                         </>
                       ),
-                      tags: ['core'],
+                      tags: ["core"],
                       children: [],
                     },
                   ],

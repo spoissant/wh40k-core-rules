@@ -39,7 +39,7 @@ function App() {
     // I am displayed if I match OR if one of my children matches
     // If I match, all of my children are matched
 
-    const filter = { query }
+    const filter = { query: query.toLowerCase() }
     setFiltered(applyFilter(coreRules, filter, false))
 
   }, [query])
