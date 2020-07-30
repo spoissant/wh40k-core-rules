@@ -13,6 +13,53 @@ const Keyword = styled.span`
   text-transform: uppercase;
 `;
 
+const TableTitle = styled.div`
+  text-transform: uppercase;
+  background: #120e0d;
+  color: #e7e7e5;
+  padding: 4px 8px;
+  font-size: 19px;
+  font-weight: 700;
+`
+
+const Table = styled.table`
+  border: 1px solid #120e0d;
+  width: 100%;
+  margin-bottom: 12px;
+  border-spacing: 0;
+  & th, & td {
+    padding: 6px;
+  }
+`
+
+const TableHead = styled.thead`
+  background: #cdd2ce;
+  outline: 1px solid #120e0d;
+  & th {
+    font-size: 18px;
+  }
+`
+
+const TableBody = styled.tbody`
+  & tr:nth-child(even) {
+    background: #cdd2ce;
+  }
+  & tr:nth-child(odd) {
+    background: #eae9e6;
+  }
+`
+
+const Red = styled.span`
+  color: #9f191e;
+  font-weight: 700;
+`
+
+const DiceResult = styled.div`
+font-weight: 700;
+font-size: 18px;
+text-align: center;
+`
+
 export default {
   text: <>Warhammer 40,000 Core Rules</>,
   tags: ["core"],
@@ -2438,34 +2485,82 @@ export default {
                   children: [
                     {
                       text: (
-                        <>
-                          <Rule>Wound roll</Rule>: Roll one D6 and compare
-                          attack’s S with target’s T on table to the left.
-                          Target wounded if score equals or beats the required
-                          result. Otherwise attack fails.
-                        </>
+                        <div>
+                          <TableTitle>WOUND ROLL</TableTitle>
+                          <Table>
+                            <TableHead>
+                              <tr>
+                                <th>ATTACKER'S STRENGTH vs TARGET'S TOUGHNESS</th>
+                                <th style={{textAlign: 'center'}}>D6 RESULT REQUIRED</th>
+                              </tr>
+                            </TableHead>
+                            <TableBody>
+                              <tr>
+                                <td>Is the Strength <Red>TWICE (or more)</Red> than the Toughness</td>
+                                <td><DiceResult>2+</DiceResult></td>
+                              </tr>
+                              <tr>
+                                <td>Is the Strength <Red>GREATER</Red> than the Toughness</td>
+                                <td><DiceResult>3+</DiceResult></td>
+                              </tr>
+                              <tr>
+                                <td>Is the Strength <Red>EQUAL</Red> than the Toughness</td>
+                                <td><DiceResult>4+</DiceResult></td>
+                              </tr>
+                              <tr>
+                                <td>Is the Strength <Red>LOWER</Red> than the Toughness</td>
+                                <td><DiceResult>5+</DiceResult></td>
+                              </tr>
+                              <tr>
+                                <td>Is the Strength <Red>HALF (or less)</Red> than the Toughness</td>
+                                <td><DiceResult>6+</DiceResult></td>
+                              </tr>
+                            </TableBody>
+                          </Table>
+                        </div>
                       ),
-                      tags: ["core"],
+                      tags: ["core", "table"],
                       children: [],
                     },
                     {
-                      text: <>Unmodified wound rolls of 1 always fail.</>,
-                      tags: ["core"],
-                      children: [],
-                    },
-                    {
-                      text: <>Unmodified wound rolls of 6 always succeed.</>,
-                      tags: ["core"],
-                      children: [],
-                    },
-                    {
-                      text: (
-                        <>
-                          Wound rolls cannot be modified by more than -1 or +1.
-                        </>
-                      ),
-                      tags: ["core"],
-                      children: [],
+                      text: null,
+                      tags: [],
+                      children: [
+                        {
+                          text: (
+                            <>
+                              <Rule>Wound roll</Rule>: Roll one D6 and compare
+                              attack’s S with target’s T on table to the left.
+                              Target wounded if score equals or beats the
+                              required result. Otherwise attack fails.
+                            </>
+                          ),
+                          tags: ["core"],
+                          children: [],
+                        },
+                        {
+                          text: <>Unmodified wound rolls of 1 always fail.</>,
+                          tags: ["core"],
+                          children: [],
+                        },
+                        {
+                          text: (
+                            <>Unmodified wound rolls of 6 always succeed.</>
+                          ),
+                          tags: ["core"],
+                          children: [],
+                        },
+                        {
+                          text: (
+                            <>
+                              Wound rolls cannot be modified by more than -1 or
+                              +1.
+                            </>
+                          ),
+                          tags: ["core"],
+                          children: [],
+                        },
+                      ],
                     },
                   ],
                 },

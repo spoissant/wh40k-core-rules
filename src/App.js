@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import ReactDOMServer from "react-dom/server";
 import "./App.css";
 import ReactGA from 'react-ga';
@@ -20,9 +20,11 @@ const applyFilter = (node, filter, parentMatches) => {
   return (match || children.length > 0) ? { ...node, children: children } : null
 }
 
+const filterDebounceTime = 300
+
 const debouncedResetScroll = debounce(() => {
   window.scrollTo(0, 0)
-}, 300)
+}, filterDebounceTime)
 
 function App() {
   const [filtered, setFiltered] = useState(coreRules)
@@ -40,15 +42,18 @@ function App() {
   //   }
   // };
 
+  const debouncedApplyFilter = useMemo(() => debounce((query) => {
+    const filter = { query: query.toLowerCase() }
+    setFiltered(applyFilter(coreRules, filter, false))
+  }, filterDebounceTime), [])
+
   useEffect(() => {
     // I am displayed if I match OR if one of my children matches
     // If I match, all of my children are matched
-
-    const filter = { query: query.toLowerCase() }
-    setFiltered(applyFilter(coreRules, filter, false))
+    debouncedApplyFilter(query)
     debouncedResetScroll()
 
-  }, [query])
+  }, [query, debouncedApplyFilter])
 
   // const debouncedBreadcrumb = useDebounce(breadcrumb, 300);
   
@@ -82,31 +87,51 @@ const Rules = ({ nodes }) => (
   </ul>
 );
 
+const headings = {
+  1: styled.h1``,
+  2: styled.h2``,
+  3: styled.h3``,
+  4: styled.h4``,
+  5: styled.h5``,
+  6: styled.h6``,
+}
+
 const Node = ({ node, level, updateBreadcrumb }) => {
   const actualLevel = node.level ?? level;
   const advanced = node.tags.some((t) => t === "advanced");
-  const Heading = styled[`h${actualLevel}`]``;
-  const title = node.text ? (
-    <Heading className={advanced ? "advanced_title" : ""}>
-      {/* <Waypoint
-        topOffset='60px'
-        onEnter={({ previousPosition, currentPosition }) => {
-          if (previousPosition === Waypoint.above && currentPosition === Waypoint.inside) {
-            updateBreadcrumb({ text: '', level: actualLevel });
-          }
-        }}
-        onLeave={({ previousPosition, currentPosition }) => {
-          if (previousPosition === Waypoint.inside && currentPosition === Waypoint.above) {
-            updateBreadcrumb({ text: ReactDOMServer.renderToString(node.text), level: actualLevel });
-          }
-        }}
-      /> */}
-      {node.text}
-    </Heading>
-  ) : null;
+  const table = node.tags.some(t => t === 'table');
+  const Heading = headings[actualLevel]
+  let title = null 
+  
+  if(node.text) {
+    if(table) {
+      title = node.text
+    } else {
+      title = (
+        <Heading className={advanced ? "advanced_title" : ""}>
+          {/* <Waypoint
+            topOffset='60px'
+            onEnter={({ previousPosition, currentPosition }) => {
+              if (previousPosition === Waypoint.above && currentPosition === Waypoint.inside) {
+                updateBreadcrumb({ text: '', level: actualLevel });
+              }
+            }}
+            onLeave={({ previousPosition, currentPosition }) => {
+              if (previousPosition === Waypoint.inside && currentPosition === Waypoint.above) {
+                updateBreadcrumb({ text: ReactDOMServer.renderToString(node.text), level: actualLevel });
+              }
+            }}
+          /> */}
+          {node.text}
+        </Heading>
+      )
+    }
+  }
 
   let children = null;
-  if (node.children.every((c) => c.children.length === 0 && !c.level)) {
+  if(table) {
+
+  } else if (node.children.every((c) => c.children.length === 0 && !c.level)) {
     children = <Rules nodes={node.children} />;
   } else {
     children = node.children?.map((c, i) => (
