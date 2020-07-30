@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/wh40k-core-rules/static/css/main.e6a02286.chunk.css",
-    "main.js": "/wh40k-core-rules/static/js/main.ef298999.chunk.js",
-    "main.js.map": "/wh40k-core-rules/static/js/main.ef298999.chunk.js.map",
+    "main.js": "/wh40k-core-rules/static/js/main.05749184.chunk.js",
+    "main.js.map": "/wh40k-core-rules/static/js/main.05749184.chunk.js.map",
     "runtime-main.js": "/wh40k-core-rules/static/js/runtime-main.fd5dd5d3.js",
     "runtime-main.js.map": "/wh40k-core-rules/static/js/runtime-main.fd5dd5d3.js.map",
-    "static/js/2.04811c13.chunk.js": "/wh40k-core-rules/static/js/2.04811c13.chunk.js",
-    "static/js/2.04811c13.chunk.js.map": "/wh40k-core-rules/static/js/2.04811c13.chunk.js.map",
+    "static/js/2.3705855a.chunk.js": "/wh40k-core-rules/static/js/2.3705855a.chunk.js",
+    "static/js/2.3705855a.chunk.js.map": "/wh40k-core-rules/static/js/2.3705855a.chunk.js.map",
     "index.html": "/wh40k-core-rules/index.html",
-    "precache-manifest.1cb3d7a5d5c95d0b2d281f91e3f4ff22.js": "/wh40k-core-rules/precache-manifest.1cb3d7a5d5c95d0b2d281f91e3f4ff22.js",
+    "precache-manifest.8c7e1b4a4c5fac83a5fdce138c807381.js": "/wh40k-core-rules/precache-manifest.8c7e1b4a4c5fac83a5fdce138c807381.js",
     "service-worker.js": "/wh40k-core-rules/service-worker.js",
     "static/css/main.e6a02286.chunk.css.map": "/wh40k-core-rules/static/css/main.e6a02286.chunk.css.map",
-    "static/js/2.04811c13.chunk.js.LICENSE.txt": "/wh40k-core-rules/static/js/2.04811c13.chunk.js.LICENSE.txt"
+    "static/js/2.3705855a.chunk.js.LICENSE.txt": "/wh40k-core-rules/static/js/2.3705855a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fd5dd5d3.js",
-    "static/js/2.04811c13.chunk.js",
+    "static/js/2.3705855a.chunk.js",
     "static/css/main.e6a02286.chunk.css",
-    "static/js/main.ef298999.chunk.js"
+    "static/js/main.05749184.chunk.js"
   ]
 }

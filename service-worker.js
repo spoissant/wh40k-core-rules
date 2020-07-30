@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/wh40k-core-rules/precache-manifest.1cb3d7a5d5c95d0b2d281f91e3f4ff22.js"
+  "/wh40k-core-rules/precache-manifest.8c7e1b4a4c5fac83a5fdce138c807381.js"
 );
 
 self.addEventListener('message', (event) => {
