@@ -9,8 +9,11 @@ const Rule = styled.span`
 `;
 
 const Keyword = styled.span`
-  font-weight: bold;
-  text-transform: uppercase;
+    font-weight: 700;
+    font-variant: small-caps;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
 `;
 
 const TableTitle = styled.div`
@@ -20,17 +23,18 @@ const TableTitle = styled.div`
   padding: 4px 8px;
   font-size: 19px;
   font-weight: 700;
-`
+`;
 
 const Table = styled.table`
   border: 1px solid #120e0d;
   width: 100%;
   margin-bottom: 12px;
   border-spacing: 0;
-  & th, & td {
+  & th,
+  & td {
     padding: 6px;
   }
-`
+`;
 
 const TableHead = styled.thead`
   background: #cdd2ce;
@@ -38,7 +42,7 @@ const TableHead = styled.thead`
   & th {
     font-size: 18px;
   }
-`
+`;
 
 const TableBody = styled.tbody`
   & tr:nth-child(even) {
@@ -47,18 +51,18 @@ const TableBody = styled.tbody`
   & tr:nth-child(odd) {
     background: #eae9e6;
   }
-`
+`;
 
 const Red = styled.span`
   color: #9f191e;
   font-weight: 700;
-`
+`;
 
 const DiceResult = styled.div`
-font-weight: 700;
-font-size: 18px;
-text-align: center;
-`
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+`;
 
 export default {
   text: <>Warhammer 40,000 Core Rules</>,
@@ -191,7 +195,7 @@ export default {
                       coherency with 2 other models from own unit
                     </>
                   ),
-                  tags: ["core"],
+                  tags: ["core", "9th"],
                   children: [],
                 },
               ],
@@ -208,7 +212,7 @@ export default {
                       vertically
                     </>
                   ),
-                  tags: ["core"],
+                  tags: ["core", "9th"],
                   children: [],
                 },
                 {
@@ -264,7 +268,7 @@ export default {
                   text: (
                     <>
                       If several units tied for closest, player resolving the
-                      ruleselects which is closest.
+                      rule selects which is closest.
                     </>
                   ),
                   tags: ["core"],
@@ -337,7 +341,7 @@ export default {
                       division,multiplication, addition, then subtraction.
                     </>
                   ),
-                  tags: ["core"],
+                  tags: ["core", "9th"],
                   children: [],
                 },
                 {
@@ -439,7 +443,7 @@ export default {
                       when it is added to your army.
                     </>
                   ),
-                  tags: ["core"],
+                  tags: ["core", "9th"],
                   children: [],
                 },
                 {
@@ -458,7 +462,7 @@ export default {
                       is less than half its Starting Strength.
                     </>
                   ),
-                  tags: ["core"],
+                  tags: ["core", "9th"],
                   children: [],
                 },
                 {
@@ -516,7 +520,7 @@ export default {
                   multiplication, addition, then subtraction.
                 </>
               ),
-              tags: ["core"],
+              tags: ["core", "9th"],
               children: [],
             },
             {
@@ -561,29 +565,29 @@ export default {
     {
       text: <>Stragegic Reserves</>,
       level: 3,
-      tags: ["main"],
+      tags: ["main", "9th"],
       children: [
         {
           text: <>Placing Units into Strategic Reserves</>,
           level: 4,
-          tags: ["main"],
+          tags: ["main", "9th"],
           children: [],
         },
         {
           text: <>Arriving from Strategic Reserves</>,
           level: 4,
-          tags: ["main"],
+          tags: ["main", "9th"],
           children: [],
         },
         {
           text: <>Setting up Strategic Reserve Units</>,
-          tags: ["main"],
+          tags: ["main", "9th"],
           children: [],
         },
         {
           text: <>Advanced Rules</>,
           level: 4,
-          tags: ["main", "advanced"],
+          tags: ["main", "advanced", "9th"],
           children: [
             {
               text: <>Aircraft and Strategic Reserves</>,
@@ -598,18 +602,18 @@ export default {
     {
       text: <>Actions</>,
       level: 2,
-      tags: ["main"],
+      tags: ["main", "9th"],
       children: [
         {
           text: <>Performing Actions</>,
           level: 3,
-          tags: ["main"],
+          tags: ["main", "9th"],
           children: [],
         },
         {
           text: <>Performing Psychic Actions</>,
           level: 3,
-          tags: ["main"],
+          tags: ["main", "9th"],
           children: [],
         },
       ],
@@ -617,17 +621,17 @@ export default {
     {
       text: <>Terrain Features</>,
       level: 2,
-      tags: ["main"],
+      tags: ["main", "9th"],
       children: [
         {
           text: <>Terrain Categories</>,
           level: 3,
-          tags: ["main"],
+          tags: ["main", "9th"],
           children: [
             {
               text: null,
               level: 4,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: (
@@ -636,7 +640,7 @@ export default {
                       categories: Hills, Obstacles, Area Terrain or Buildings.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -646,7 +650,7 @@ export default {
                       Terrain features (see terrain traits).
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -654,7 +658,7 @@ export default {
             {
               text: <>Hills</>,
               level: 4,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: (
@@ -663,14 +667,14 @@ export default {
                       than a terrain feature.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
                   text: (
                     <>Models move over hils using normal rules for movement.</>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -680,12 +684,12 @@ export default {
                       hill is visible.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
                   text: <>Hill cannot be attacked.</>,
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -693,7 +697,7 @@ export default {
             {
               text: <>Obstacles</>,
               level: 4,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: (
@@ -702,7 +706,7 @@ export default {
                       movement.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -712,12 +716,12 @@ export default {
                       Obstacle is visible.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
                   text: <>Obstacles cannot be attacked.</>,
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -731,7 +735,7 @@ export default {
                       this terrain feature.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -739,11 +743,11 @@ export default {
             {
               text: <>Area Terrain</>,
               level: 4,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: <>Area Terrain has a footprint.</>,
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -752,7 +756,7 @@ export default {
                       Footpring = boundary of terrain feature at ground level.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -762,7 +766,7 @@ export default {
                       movement.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -772,12 +776,12 @@ export default {
                       Area Terrain is visible.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
                   text: <>Are Terrain cannot be attacked.</>,
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -788,7 +792,7 @@ export default {
                       <Rule>benefits of cover</Rule> while they are within it.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -796,7 +800,7 @@ export default {
             {
               text: <>Buildings</>,
               level: 4,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: (
@@ -805,12 +809,12 @@ export default {
                       features.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
                   text: <>Models cannot move across Buildings.</>,
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -820,12 +824,12 @@ export default {
                       building is visible.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
                   text: <>Enemy Buildings can be attacked.</>,
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -835,12 +839,12 @@ export default {
         {
           text: <>Terrain Traits</>,
           level: 3,
-          tags: ["main"],
+          tags: ["main", "9th"],
           children: [
             {
               text: <>Defensible</>,
               level: 5,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: (
@@ -849,7 +853,7 @@ export default {
                       to Defend (if no enemy within Engagement Range).
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -858,7 +862,7 @@ export default {
                       <Rule>Hold Steady</Rule>: Overwatch attacks hit on 5+.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -868,7 +872,7 @@ export default {
                       1 to hit rolls in next Fight phase.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -876,7 +880,7 @@ export default {
             {
               text: <>Defence Line</>,
               level: 5,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: (
@@ -885,12 +889,12 @@ export default {
                       terrain feature.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
                   text: <>Can fight if within 2" of ennemy</>,
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -898,7 +902,7 @@ export default {
             {
               text: <>Breachable</>,
               level: 5,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: (
@@ -908,7 +912,7 @@ export default {
                       chains and foliage.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -916,7 +920,7 @@ export default {
             {
               text: <>Difficult Ground</>,
               level: 5,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: (
@@ -926,7 +930,7 @@ export default {
                       unit can <Keyword>Fly</Keyword>).
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -934,7 +938,7 @@ export default {
             {
               text: <>Dense Cover</>,
               level: 5,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: (
@@ -945,7 +949,7 @@ export default {
                       one model in target unit.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -955,7 +959,7 @@ export default {
                       their own terrain feature.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -965,7 +969,7 @@ export default {
                       and units with W characteristic of 18+.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -973,7 +977,7 @@ export default {
             {
               text: <>Unstable Position</>,
               level: 5,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: (
@@ -982,7 +986,7 @@ export default {
                       terrain feature.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -990,7 +994,7 @@ export default {
             {
               text: <>Exposed Position</>,
               level: 5,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: (
@@ -999,7 +1003,7 @@ export default {
                       on top of this terrain feature.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -1007,16 +1011,16 @@ export default {
             {
               text: <>Obscuring</>,
               level: 5,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: <>Blocks visibility if at least 5" tall.</>,
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
                   text: <>Models on or within can see and be seen normally.</>,
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -1027,7 +1031,7 @@ export default {
                       through this terrain feature. (the reverse is not true)
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -1035,7 +1039,7 @@ export default {
             {
               text: <>Light Cover</>,
               level: 5,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: (
@@ -1045,12 +1049,12 @@ export default {
                       terrain feature.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
                   text: <>Invulnerable saving throws unaffected.</>,
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -1058,7 +1062,7 @@ export default {
             {
               text: <>Heavy Cover</>,
               level: 5,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: (
@@ -1069,12 +1073,12 @@ export default {
                       this terrain feature.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
                   text: <>Invulnerable saving throws unaffected.</>,
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -1082,7 +1086,7 @@ export default {
             {
               text: <>Scaleable</>,
               level: 5,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: (
@@ -1093,7 +1097,7 @@ export default {
                       on top of this terrain feature (exluding ground floor)
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -1104,7 +1108,7 @@ export default {
                       floors, ceilings and gantries.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -1112,11 +1116,11 @@ export default {
             {
               text: <>Inspiring</>,
               level: 5,
-              tags: ["main"],
+              tags: ["main", "9th"],
               children: [
                 {
                   text: <>+1 Ld if wholly within 6"</>,
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
                 {
@@ -1126,7 +1130,7 @@ export default {
                       the effect only applies to matching units.
                     </>
                   ),
-                  tags: ["main"],
+                  tags: ["main", "9th"],
                   children: [],
                 },
               ],
@@ -1152,7 +1156,7 @@ export default {
                   apply in that phase continue to apply.
                 </>
               ),
-              tags: ["core"],
+              tags: ["core", "9th"],
               children: [],
             },
             {
@@ -1162,7 +1166,7 @@ export default {
                   phase rules.
                 </>
               ),
-              tags: ["core"],
+              tags: ["core", "9th"],
               children: [],
             },
           ],
@@ -1170,7 +1174,7 @@ export default {
         {
           text: <>Command Phase</>,
           level: 2,
-          tags: ["core"],
+          tags: ["core", "9th"],
           children: [
             {
               text: (
@@ -1179,7 +1183,7 @@ export default {
                   Battleforged.
                 </>
               ),
-              tags: ["core"],
+              tags: ["core", "9th"],
               children: [],
             },
             {
@@ -1189,12 +1193,12 @@ export default {
                   the Movement phase (pg 10).
                 </>
               ),
-              tags: ["core"],
+              tags: ["core", "9th"],
               children: [],
             },
             {
               text: <>Progress to the Movement phase (pg 10).</>,
-              tags: ["core"],
+              tags: ["core", "9th"],
               children: [],
             },
           ],
@@ -1375,7 +1379,7 @@ export default {
                           powers this turn unless they are Titanic.
                         </>
                       ),
-                      tags: ["core"],
+                      tags: ["core", "9th"],
                       children: [],
                     },
                   ],
@@ -1435,7 +1439,7 @@ export default {
                       the end of the battle counts as destroyed.
                     </>
                   ),
-                  tags: ["core"],
+                  tags: ["core", "9th"],
                   children: [],
                 },
                 {
@@ -1564,8 +1568,7 @@ export default {
                         {
                           text: (
                             <>
-                              A unit cannot embark within a{" "}
-                              <Keyword>Transport</Keyword> that is within
+                              A unit cannot embark within a <Keyword>Transport</Keyword> that is within
                               Engagement Range of any enemy models.
                             </>
                           ),
@@ -1629,7 +1632,7 @@ export default {
                               within Engagement Range of any enemy models.
                             </>
                           ),
-                          tags: ["core"],
+                          tags: ["core", '9th',],
                           children: [],
                         },
                         {
@@ -1673,7 +1676,7 @@ export default {
                               each 1, one model is destroyed.
                             </>
                           ),
-                          tags: ["core"],
+                          tags: ["core", '9th',],
                           children: [],
                         },
                         {
@@ -2490,30 +2493,59 @@ export default {
                           <Table>
                             <TableHead>
                               <tr>
-                                <th>ATTACKER'S STRENGTH vs TARGET'S TOUGHNESS</th>
-                                <th style={{textAlign: 'center'}}>D6 RESULT REQUIRED</th>
+                                <th>
+                                  ATTACKER'S STRENGTH vs TARGET'S TOUGHNESS
+                                </th>
+                                <th style={{ textAlign: "center" }}>
+                                  D6 RESULT REQUIRED
+                                </th>
                               </tr>
                             </TableHead>
                             <TableBody>
                               <tr>
-                                <td>Is the Strength <Red>TWICE (or more)</Red> than the Toughness</td>
-                                <td><DiceResult>2+</DiceResult></td>
+                                <td>
+                                  Is the Strength <Red>TWICE (or more)</Red>{" "}
+                                  than the Toughness
+                                </td>
+                                <td>
+                                  <DiceResult>2+</DiceResult>
+                                </td>
                               </tr>
                               <tr>
-                                <td>Is the Strength <Red>GREATER</Red> than the Toughness</td>
-                                <td><DiceResult>3+</DiceResult></td>
+                                <td>
+                                  Is the Strength <Red>GREATER</Red> than the
+                                  Toughness
+                                </td>
+                                <td>
+                                  <DiceResult>3+</DiceResult>
+                                </td>
                               </tr>
                               <tr>
-                                <td>Is the Strength <Red>EQUAL</Red> than the Toughness</td>
-                                <td><DiceResult>4+</DiceResult></td>
+                                <td>
+                                  Is the Strength <Red>EQUAL</Red> than the
+                                  Toughness
+                                </td>
+                                <td>
+                                  <DiceResult>4+</DiceResult>
+                                </td>
                               </tr>
                               <tr>
-                                <td>Is the Strength <Red>LOWER</Red> than the Toughness</td>
-                                <td><DiceResult>5+</DiceResult></td>
+                                <td>
+                                  Is the Strength <Red>LOWER</Red> than the
+                                  Toughness
+                                </td>
+                                <td>
+                                  <DiceResult>5+</DiceResult>
+                                </td>
                               </tr>
                               <tr>
-                                <td>Is the Strength <Red>HALF (or less)</Red> than the Toughness</td>
-                                <td><DiceResult>6+</DiceResult></td>
+                                <td>
+                                  Is the Strength <Red>HALF (or less)</Red> than
+                                  the Toughness
+                                </td>
+                                <td>
+                                  <DiceResult>6+</DiceResult>
+                                </td>
                               </tr>
                             </TableBody>
                           </Table>
