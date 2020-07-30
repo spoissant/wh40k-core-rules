@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ReactDOMServer from "react-dom/server";
 import "./App.css";
 import ReactGA from 'react-ga';
@@ -8,6 +8,7 @@ import coreRules from "./data/core-rules";
 import { Waypoint } from "react-waypoint";
 
 import useDebounce from './utils/utils'
+import debounce from 'lodash/debounce'
 
 ReactGA.initialize('UA-173899337-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
@@ -18,6 +19,10 @@ const applyFilter = (node, filter, parentMatches) => {
   const children = node.children.map(c => applyFilter(c, filter, match)).filter(n => n)
   return (match || children.length > 0) ? { ...node, children: children } : null
 }
+
+const debouncedResetScroll = debounce(() => {
+  window.scrollTo(0, 0)
+}, 300)
 
 function App() {
   const [filtered, setFiltered] = useState(coreRules)
@@ -41,6 +46,7 @@ function App() {
 
     const filter = { query: query.toLowerCase() }
     setFiltered(applyFilter(coreRules, filter, false))
+    debouncedResetScroll()
 
   }, [query])
 
