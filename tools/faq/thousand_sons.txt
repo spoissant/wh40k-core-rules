@@ -1,0 +1,176 @@
+WARHAMMER 40,000 – CODEX: THOUSAND SONS 1
+CODEX: THOUSAND SONS
+Indomitus Version 1.0
+These documents collect amendments to the rules and present
+our responses to players’ frequently asked questions. Often
+these amendments are updates necessitated by new releases or
+community feedback; these can be identified by the presence
+of an asterisk before the page reference. At other times, these
+amendments are errata designed to correct mistakes or add
+clarity to a rule that is not as clear as it might be.
+As they’re revised regularly, each of these documents has a
+version number; where a version number has a letter, e.g. 1.1a,
+this means it has had a local amendment, only in that language,
+to clarify a translation issue or other minor correction. When
+a document is revised, the version number will be incremented
+and new updates will be highlighted in blue, while new errata
+and FAQs will be highlighted in magenta.
+UPDATES & ERRATA
+All Thousand Sons datasheets (excluding Chaos Cultists
+and Tzaangor)
+Add the following ability:
+‘Hateful Assault: If this unit makes a charge move, is charged
+or performs a Heroic Intervention, add 1 to the Attacks
+characteristic of models in this unit until the end of the turn.’
+Page 68 – Daemon Prince of Tzeentch
+Add ‘Psyker’ to the keywords line.
+Page 73 – Tzaangors, Wargear Options
+Add the following bullet point:
+‘• One Tzaangor can take an Icon of Flame (pg 90)’
+Page 74 – Horrors, Power Rating
+Change the Power Rating to read ‘4’.
+Page 74 – Horrors, unit description
+Change the second sentence to read:
+‘It can include up to 10 additional Horrors (Power Rating +4) or
+up to 20 additional Horrors (Power Rating +8).’
+Page 74 – Horrors, Abilities, Magic Made Manifest
+Change this ability to read:
+‘Magic Made Manifest: A unit of Horrors can attempt to
+manifest one psychic power in each friendly Psychic phase, and
+attempt to deny one psychic power in each enemy Psychic phase.
+However, when you do so, only roll a single D6 for the Psychic
+test or Deny the Witch test, and use the result to determine
+the outcome. Note that this means the Horrors can’t roll a
+double 1 or 6 to suffer Perils of the Warp. In addition, if the unit
+manifests the Smite psychic power whilst it contains less than 10
+Pink Horrors, it only inflicts 1 mortal wound rather than D3.’
+*Page 79 – Chaos Spawn, Abilities, Mutated Beyond Reason,
+Designer’s Note
+Change the last sentence to read:
+‘Each has a points value of 23 (this includes all of its weapons).’
+*Page 82 and 91 – Chaos Vindicator and Ranged Weapons list,
+demolisher cannon
+Change Type characteristic to Heavy D6 and Abilities to ‘Blast’.
+*Page 83 – Chaos Land Raider, Abilities, Daemonic
+Machine Spirit
+Delete this ability.
+Page 96 – Stratagems, Fire Frenzy, rules text
+Change the first sentence to read:
+‘Use this Stratagem in your Shooting phase, just before a
+Thousand Sons Helbrute from your army shoots.’
+Page 96 – Stratagems, Cabalistic Focus
+Change to read:
+‘Use this Stratagem before attempting to manifest a psychic
+power with a Thousand Sons Psyker from your army that is
+within 6" of at least two other friendly Thousand Sons Psyker
+units. Add 2 to the Psychic test.’
+Page 96 – Stratagems, Killshot, rules text
+Change the second sentence to read:
+‘Add 1 to the wound rolls and damage for all of the Predators’
+attacks that target Monsters or Vehicles this phase.’
+*Page 97 – Boon of Tzeentch, Spawndom
+Change the third sentence to the following:
+‘If you do so, set up the Chaos Spawn within 6" of the character
+and not within Engagement Range of any enemy units before
+removing them as a casualty.’
+Page 97 – Stratagems, Warpflame Gargoyles, rules text
+Change the second sentence to read:
+‘Pick a Thousand Sons Vehicle from your army (but not a
+Helbrute or Heldrake) and roll a D6 for each other unit (friend
+or foe) within 3" of it, subtracting 2 from the roll if the unit
+being rolled for is a Character or Vehicle.’
+*Page 98 – Stratagems, The Flesh-Change, rules text
+Change the fourth sentence to the following:
+‘If you do so, set up the Chaos Spawn within 6" of the character
+and not within Engagement Range of any enemy units before
+removing them as a casualty.’
+WARHAMMER 40,000 – CODEX: THOUSAND SONS 2
+*Page 101 – Dark Hereticus Discipline, Gift of Chaos, rules text
+Change the fourth sentence to read:
+‘If a Character is destroyed by this power, you can add one
+Chaos Spawn to your army within 6" of the character and not
+within Engagement Range of any enemy units before they are
+removed as a casualty.’
+Page 101 – Discipline of Tzeentch, Bolt of Change rules text
+Change the first sentence to read:
+‘Bolt of Change has a warp charge value of 8.’
+*Page 101 – Discipline of Tzeentch, Bolt of Change, rules text
+Change the fourth sentence to read:
+‘If a Character is destroyed by this power, you can add a Chaos
+Spawn to your army within 6" of the character and not within
+Engagement Range of any enemy units before they are removed
+as a casualty.’
+Page 101 – Discipline of Tzeentch, Gaze of Fate, rules text
+Change the second sentence to read:
+‘If manifested, until the end of the turn you can re-roll one
+single dice roll that you have rolled.’
+Page 101 – Discipline of Tzeentch, Treason of Tzeentch,
+rules text
+Change the third and fourth sentences to read:
+‘If the result is greater than the character’s Leadership
+characteristic, until the end of the following Fight phase treat
+that character as if it were a friendly model from your army in
+your Shooting, Charge and Fight phases.’
+*Page 101 – Warptime
+Change the second sentence to read:
+‘If manifested, pick a Heretic Astartes unit (excluding Aircraft)
+within 3" of the psyker.’
+FAQs
+Q: Can a Tzaangor unit be equipped with both a brayhorn (from
+Codex: Thousand Sons) and an instrument of Chaos (from
+Index: Chaos)?
+A: No. The brayhorn and instrument of Chaos are intended to be
+the same wargear option with an updated name.
+Q: If I select my Warlord for the Flesh Change Stratagem, can my
+opponent achieve any relevant victory conditions or objectives as
+a result of them being destroyed?
+A: Yes.
+Q: When a model’s datasheet states that it knows, for example,
+three psychic powers from the Discipline of Change and/or Dark
+Hereticus discipline, does this mean I can choose six psychic
+powers for them in total?
+A: No, it means you can choose three psychic powers for them,
+in one of the following combinations:
+1) three from the Discipline of Change.
+2) three from the Dark Hereticus discipline.
+3) one from one discipline and two from the other.
+Q: The Brotherhood of Sorcerers ability increases the range of
+psychic powers by 6". If a psychic power has a secondary effect
+that has a range (such as Infernal Gateway, which has an initial
+range of 12" but then affects all other units within 3"), does the
+range increase apply to the initial range, the secondary range,
+or both?
+A: It only applies to the initial range; so in the case of Infernal
+Gateway, you would identify the nearest visible enemy model
+within 18" of the psyker, rather than within 12". That model’s
+unit and every other unit within 3" of that model would then
+suffer D3 mortal wounds.
+Q: Can I replace the Smite psychic power when using the Chaos
+Familiar Stratagem?
+A: Yes.
+Q: If I manifest the Gift of Chaos psychic power, and target a unit
+whose models have different Toughness characteristics, which one
+should I use?
+A: Use the highest Toughness characteristic in the target unit.
+Q: How should Perils of the Warp be resolved against units led by
+an Aspiring Sorcerer or Scarab Occult Sorcerer?
+A: Any mortal wounds suffered are applied to Sorcerer’s unit, so
+can be applied to another model if you wish (if a model in that
+unit has already suffered any wounds, it must still be applied to
+this model first).
+Q: If the Aspiring Sorcerer or Scarab Occult Sorcerer from a unit
+has been slain, is this unit still treated as being a Psyker?
+A: Yes.
+Designer’s Note: Whilst these units would not be able to manifest
+or deny any psychic powers, any abilities, objectives or effects
+which affect psykers are still likely to affect these warp-infused,
+animated suits of armour.
+Q: Can the Killshot Stratagem be used to affect
+Hellforged Predators?
+A: No. The Killshot Stratagem can only be used to affect models
+using the Chaos Predator datasheet.
+Q: If a Character is being treated as part of the opponent’s army
+due to the Treason of Tzeentch psychic power, must units from
+that Character’s actual army fight it in the Fight phase if they are
+within Engagement Range of that Character?
+A: Yes.

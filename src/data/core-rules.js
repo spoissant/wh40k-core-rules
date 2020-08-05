@@ -65,7 +65,7 @@ const DiceResult = styled.div`
 `;
 
 export default {
-  text: <>Warhammer 40,000 Core Rules</>,
+  text: null,
   tags: ["core"],
   children: [
     {
@@ -1568,7 +1568,8 @@ export default {
                         {
                           text: (
                             <>
-                              A unit cannot embark within a <Keyword>Transport</Keyword> that is within
+                              A unit cannot embark within a{" "}
+                              <Keyword>Transport</Keyword> that is within
                               Engagement Range of any enemy models.
                             </>
                           ),
@@ -1632,7 +1633,7 @@ export default {
                               within Engagement Range of any enemy models.
                             </>
                           ),
-                          tags: ["core", '9th',],
+                          tags: ["core", "9th"],
                           children: [],
                         },
                         {
@@ -1676,7 +1677,7 @@ export default {
                               each 1, one model is destroyed.
                             </>
                           ),
-                          tags: ["core", '9th',],
+                          tags: ["core", "9th"],
                           children: [],
                         },
                         {

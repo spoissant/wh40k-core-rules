@@ -1,0 +1,305 @@
+WARHAMMER 40,000 – CODEX: T’AU EMPIRE 1
+CODEX: T’AU EMPIRE
+Indomitus Version 1.0
+These documents collect amendments to the rules and present
+our responses to players’ frequently asked questions. Often
+these amendments are updates necessitated by new releases or
+community feedback; these can be identified by the presence
+of an asterisk before the page reference. At other times, these
+amendments are errata designed to correct mistakes or add
+clarity to a rule that is not as clear as it might be.
+As they’re revised regularly, each of these documents has a
+version number; where a version number has a letter, e.g. 1.1a,
+this means it has had a local amendment, only in that language,
+to clarify a translation issue or other minor correction. When
+a document is revised, the version number will be incremented
+and new updates will be highlighted in blue, while new errata
+and FAQs will be highlighted in magenta.
+UPDATES & ERRATA
+Page 89 – Abilities, Master of War
+Change the Kauyon ability to read:
+‘Kauyon: On a turn in which you declare Kauyon, at the start of
+your Movement phase, you can select any friendly <Sept> units
+that are within 6" of the <Sept> Commander. Until the end of the
+turn, the selected units cannot move for any reason, but you can
+re-roll failed hit rolls for attacks made by these units.’
+*Page 89 – For the Greater Good
+Change to read:
+‘- Each time an enemy unit declares a charge against this unit,
+this unit can fire Overwatch before the charge roll is made.
+- While a friendly unit with this ability is within 6" of this unit,
+each time an enemy unit declares a charge against this unit,
+that friendly unit can fire Overwatch before the charge roll is
+made. If it does so, until the end of the phase, that friendly unit
+cannot fire Overwatch again.
+Designer’s Note: This allows T’au units to fire Overwatch in the
+same way that they did in the previous edition, and as such, units
+with this ability do not require the Fire Overwatch Stratagem
+from the Warhammer 40,000 Core Book in order to do so.’
+Pages 90, 97-99, 105-109, 111-114 and 116 – Abilities,
+Saviour Protocols
+Change to read:
+‘When resolving an attack made against a <Sept> Infantry or
+<Sept> Battlesuit unit whilst that unit is within 3" of a friendly
+<Sept> Drones unit, if the wound roll is successful, you can roll
+one D6; on a 2+ that Drones unit suffers 1 mortal wound and
+the attack sequence ends.’
+Page 93 – Commander in XV86 Coldstar Battlesuit,
+Wargear Options
+Change the first bullet point to read:
+‘• This model may replace its high-output burst cannon and
+missile pod with two items from the Ranged Weapons and/or
+Support Systems lists.’
+Page 97 – Longstrike
+Add the ‘Hammerhead’ keyword to this model’s Keywords
+(Longstrike) line.
+Change this model’s Fire Caste Exemplar ability to read:
+‘You can add 1 to hit rolls in the Shooting phase for friendly T’au
+Sept Hammerheads within 6" of Longstrike.’
+*Pages 102 & 123 – Target Lock
+Change to read:
+’A model with a target lock does not suffer the penalty to their
+hit rolls for Advancing and firing Assault weapons. This model
+can also Advance and fire Heavy or Rapid Fire weapons, but you
+must subtract 1 from its hit rolls when it does so.’
+*Page 104 – Firesight Marksman, Abilities, Marksman
+Stealth Field
+Change to read:
+‘Each time a ranged attack is allocated to this model while it
+is receiving the benefits of cover, add an additional 1 to any
+armour saving throw made against that attack.’
+*Page 106 – XV104 Riptide Battlesuit, Abilities, Nova Reactor
+Change the Boost text to read:
+‘This model can move 2D6" in your Charge phase. You cannot
+use this ability to move within Engagement Range of any
+enemy models. If it does so, this model cannot declare a charge
+that phase.’
+*Page 113 and 121 – MV71 Sniper Drones and Ranged Weapons
+list, longshot pulse rifle, Abilities
+Change the first sentence to read:
+‘Each time you select a target for this weapon, you can ignore the
+Look Out, Sir rule.’
+*Page 117, 118 and 119 – Tidewall Shieldline, Tidewall
+Droneport and Tidewall Gunrig, Abilities, Open-Topped
+Change the last sentence to read:
+‘When they do so, any restrictions or modifiers that apply to this
+model also apply to its passengers; for example, the passengers
+cannot shoot if this model has Fallen Back in the same turn.
+While this transport is within Engagement Range of any enemy
+units, embarked units cannot shoot, except with Pistols.’
+WARHAMMER 40,000 – CODEX: T’AU EMPIRE 2
+*Page 117 – Tidewall Shieldline, Abilities, Fortification
+Change the last sentence to read:
+‘However, friendly units can still target enemy units that are
+within Engagement Range of these models.’
+*Page 118 – Tidewall Droneport, Abilities, Fortification
+Change the last sentence to read:
+‘However, friendly units can still target enemy units that are
+within Engagement Range of this model.’
+*Page 119 – Tidewall Gunrig, Abilities, Fortification
+Change the last sentence to read:
+‘However, this model can still shoot if there are enemy models
+within Engagement Range of it, and friendly units can still target
+enemy units that are within Engagement Range of this model.’
+*Page 120 – KV128 Stormsurge, Abilities, Walking Battleship
+Change to read:
+‘This model is eligible to declare a charge in a turn in which it Fell
+Back. Each time this model makes a Normal Move, Advances or
+Falls Back, it can be moved across other models (excluding Monster
+and Vehicle models) as if they were not there, and when it does
+it can be moved within Engagement Range of such models, but
+cannot finish its move within Engagement Range of any of them.’
+Page 121 – Ranged Weapons, cyclic ion blaster,
+Overcharge, Abilities
+Change to read:
+‘If you roll one or more hit rolls of 1, the bearer’s unit suffers a
+mortal wound after all of this weapon’s shots have been resolved.’
+Page 127 – Sept Tenets, T’au Sept: Coordinated Fire Arcs,
+rules text
+Change to read:
+‘When a unit with this tenet uses their For the Greater Good
+ability, or when they fire Overwatch whilst they are within
+6" of another friendly T’au Sept unit, a 5 or 6 is required for a
+successful hit roll, irrespective of the firing model’s Ballistic Skill
+or any modifiers.’
+Page 127 – Sept Tenets, Dal’yth Sept: Adaptive Camouflage,
+rules text
+Change to read:
+‘A unit with the tenet receives the benefit of cover, even while in
+the open. A unit with this tenet that moves for any reason loses
+the benefit of this tenet until the start of its next Movement phase.’
+Page 128 – Stratagems, Automated Repair System, rules text
+Add the following:
+‘You can only use this Stratagem once per turn.’
+*Page 130 – Strike and Fade
+Change the second sentence to read:
+‘Pick a Dal’yth Sept unit from your army (excluding Aircraft).’
+Page 130 – Stratagems, Focused Fire
+Change to read:
+‘Use this Stratagem after a T’au Sept unit from your army has
+attacked an enemy unit in the Shooting phase and the attack
+resulted in the enemy unit losing one or more wounds. Add 1 to
+wound rolls for attacks made by other T’au Sept units from your
+army that target the same enemy unit this phase.’
+*Page 131 – Sept Warlord Traits, Sa’cea, Beacon of Honour
+Change to read:
+‘While a friendly Sa’cea unit is within 6" of this Warlord, each
+time that unit fails a Morale test, one model does not flee that unit
+(although Combat Attrition tests are taken for the unit as normal).’
+*Page 133 – Signature Systems, Vectored Manoeuvring Thrusters
+Add the following:
+‘This move cannot bring this model within Engagement Range of
+any enemy models.’
+DATACARDS: T’AU EMPIRE
+Automated Repair System (Stratagem)
+Change the first sentence of the rules text on this datacard to read:
+‘Use this Stratagem at the start of any turn.’
+DAHYAK GREKH
+Warhammer Quest Blackstone Fortress includes a number of
+datasheets for Warhammer 40,000, allowing players to use
+the Citadel Miniatures contained within the box in games
+of Warhammer 40,000. Amongst these is a datasheet for
+Dahyak Grekh, a model designed to be used as part of a T’au
+army. The following errata applies to Dahyak Grekh:
+*Blackstone Fortress: Datasheets, page 10 – Dahyak Grekh
+Change the Quarry Can’t Hide ability to read:
+‘Each time you select a target for a weapon this model
+is making an attack with, you can ignore the Look Out,
+Sir rule.’
+*Change the Fieldcraft ability to read:
+‘Each time a ranged attack is allocated to this model while it
+is receiving the benefits of cover, add an additional 1 to any
+armour saving throw made against that attack.’
+FAQs
+Q: If an attack inflicts mortal wounds on the target, and the
+attack is subsequently allocated to a Drones unit as a result
+of the Saviour Protocols ability, what happens to those mortal
+wounds inflicted?
+A: They are cancelled. All damage and mortal wounds inflicted as
+the result of that attack is reduced to the mortal wound inflicted
+by the Saviour Protocols ability on that Drones unit.
+Q: If an attack inflicts a rules effect on a target unit (e.g. Tremor
+Shells in Codex Space Marines), and that attack is subsequently
+allocated to a Drones unit as a result of the Saviour Protocols
+ability, which unit is the rules effect applied to?
+A: The Drones unit.
+Q: If an attack inflicts mortal wounds on a unit as a result of a hit
+roll, and the attack sequence ends before it successfully wounds the
+target (e.g. the Hellfire Shells Stratagem or an attack made with a
+shokk attack gun with a Strength characteristic of 11+ that fails to
+wound the target), can I allocate the mortal wounds to a Drones
+unit with the Saviour Protocols ability?
+A: No. As the attack sequence has ended before the target has
+been wounded, there is no wound to allocate to the Drones unit.
+Therefore the target suffers the mortal wounds as normal.
+WARHAMMER 40,000 – CODEX: T’AU EMPIRE 3
+Q: If Dahyak Grekh has been set up in pursuit, can his Concealed
+Booby Traps ability be used before he is set up on the battlefield?
+A: Yes.
+Q: When do you declare which units will fire Overwatch as part of
+The Greater Good ability?
+A: You must declare all units that wish to fire Overwatch at that
+charging unit before resolving any of these attacks.
+Q: In Index: Xenos 2 and Imperial Armour Index: Xenos, the
+Stimulant Injector was a piece of wargear that I could purchase for
+certain T’au Empire units. In Codex: T’au Empire, the Stimulant
+Injector is no longer a wargear option, but instead there is a
+Stimulant Injector Stratagem. Can I continue to use the Index:
+Xenos 2 and Imperial Armour Index: Xenos datasheets in order
+to purchase Stimulant Injectors for my units, as per the ‘What
+datasheet rules should I use?’ flowchart?
+A: No. You cannot purchase Stimulant Injectors anymore and the
+rules for Stimulant Injectors as presented in Codex: T’au Empire
+(i.e. the Stratagem) take precedence.
+Q: With regards the Cadre Fireblade’s Volley Fire ability, what
+exactly is meant by ‘may fire an extra shot’?
+A: It means the player can make one more hit roll for each model
+that is firing at a target within half range. Note that for a model
+with a pulse rifle (a Rapid Fire weapon) this means that it would
+make three hit rolls if the target is within half range.
+Q: When an enemy model makes a ranged attack against a XV95
+Ghostkeel Battlesuit unit, its Ghostkeel Electrowarfare Suite
+applies a -1 modifier to the hit roll. If that unit is within 3" of a
+friendly MV5 Stealth Drones unit, the drones’ Stealth Field
+ability applies a further -1 modifier to the hit roll. Given that hit
+rolls cannot be modified by more than -1 or +1, and combined these
+abilities result in a -2 modifier, how does this work?
+A: While hit rolls and wounds rolls cannot be modified by more
+than -1 or +1, this limit takes effect after all applicable modifiers
+have been applied, some of which may cancel each other out.
+In this instance, if the model making the attack was a KV128
+Stormsurge that had its anchors deployed, its Stabilising
+Anchors ability would apply a +1 modifier to the hit roll. Applying
+all of these modifiers together to the hit roll results in a final
+modifier of -1.
+Q: How many shots does a model armed with multiple pulse
+weapons fire when affected by a Cadre Fireblade’s Volley Fire
+ability? Is it one extra shot with each with each of those weapons, or
+one extra shot with just one of those weapons?
+A: These models fire one additional shot for each weapon. For
+example, a Drone armed with two pulse carbines (an Assault 2
+weapon) would fire three shots from each weapon (for a total of
+six shots from that model).
+Q: Is a longshot pulse rifle considered a pulse rifle for the purposes
+of volley fire?
+A: No.
+Q: If you set up a Devilfish transport with a unit of Pathfinders
+embarked inside, and the Pathfinders are accompanied by a
+Tactical Drone, at which point does the Pathfinder unit count as
+‘set up’ for the purposes of the Drone Support ability (i.e. does the
+Drone become a separate unit when the Devilfish is set up, or does it
+become a separate unit when the Pathfinder unit disembarks)?
+A: The unit of Pathfinders counts as having been set up embarked
+within the Devilfish, so the Drone becomes a separate unit as
+soon as the Devilfish is set up.
+Q: When a T’au Empire Vehicle that has the Attached Drones
+ability but not the Transport keyword (or a Transport ability) is
+destroyed, how do the attached drone models disembark?
+A: The attached drone models immediately disembark using the
+normal rules as if that Vehicle unit was a transport.
+Q: If several TX4 Piranhas from a single unit are destroyed, do any
+disembarking drones form a unit? Can these disembarking drones
+be set up within 3" of any Piranha model in that unit?
+A: No: Each set of drones is treated as a separate unit, in the same
+manner as if they had disembarked normally under their Detach
+ability. Drones must be set up within 3" of the model they are
+disembarking from as normal.
+Q: Can an Infantry unit with accompanying Drones be
+deployed within a Fortification if the Drones cannot embark inside
+that Fortification?
+A: Yes, but the Drones themselves cannot embark inside the
+Fortification – instead they must be set up within 2" of the
+Fortification when their unit is deployed within it.
+Q: The multi-tracker allows you to re-roll hit rolls of 1 in the Shooting
+phase for a model equipped with it, as long as it fires all of its
+weapons at the same target. What if the target is out of range for one
+or more of the firing model’s weapons? Do you have to pick a target
+that can be fired at by all of the firing model’s weapons?
+A: No, the intent is that any weapons that the firing model can
+legitimately fire must be fired at the same target.
+Q: Can I use the Breach and Clear! Stratagem against a unit that
+has 3 or more markerlight tokens on it?
+A: Yes.
+Q: Is the Experimental Weaponry Stratagem used before or after I
+determine how many shots are fired by a weapon?
+A: Before.
+Q: How does the Saviour Protocols ability work when a T’au
+Empire unit is hit and wounded by a powerful weapon, like a
+lascannon, when it is near to some friendly Drones?
+A: Let’s imagine a T’au Sept unit is targeted by a model firing
+a lascannon whilst a friendly T’au Sept Drone unit is within 3"
+of it. The hit roll and wound rolls for the attack made with the
+lascannon are both successful. The T’au Sept player then chooses
+to try and intercept the attack with a nearby drone unit and rolls
+one D6, scoring a 3. This is more than 2+, so the drone unit suffers
+1 mortal wound and the lascannon’s attack ends (i.e. you do not
+take a saving throw, and the weapon’s damage characteristic
+is irrelevant).
+Q: If a Commander uses their Master of War ability to declare
+either Kauyon or Mont’ka, and a friendly <Sept> unit that was
+more than 6" from that Commander at the beginning of the turn
+subsequently moves within 6" of that Commander during that turn,
+does that <Sept> unit then benefit from Kauyon or Mont’ka?
+A: No. Kauyon and Mont’ka only affect those units that are within
+6" of the Commander when the ability was used at the start of
+the turn.

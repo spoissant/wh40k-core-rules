@@ -1,0 +1,162 @@
+WARHAMMER 40,000 – PSYCHIC AWAKENING: BLOOD OF BAAL 1
+PSYCHIC AWAKENING: BLOOD OF BAAL
+Indomitus Version 1.0
+These documents collect amendments to the rules and present
+our responses to players’ frequently asked questions. Often
+these amendments are updates necessitated by new releases or
+community feedback; these can be identified by the presence
+of an asterisk before the page reference. At other times, these
+amendments are errata designed to correct mistakes or add
+clarity to a rule that is not as clear as it might be.
+As they’re revised regularly, each of these documents has a
+version number; where a version number has a letter, e.g. 1.1a,
+this means it has had a local amendment, only in that language,
+to clarify a translation issue or other minor correction. When
+a document is revised, the version number will be incremented
+and new updates will be highlighted in blue, while new errata
+and FAQs will be highlighted in magenta.
+UPDATES & ERRATA
+Page 34 – Combat Doctrines
+Replace the Combat Doctrines ability with the following (note
+that the Devastator Doctrine, Tactical Doctrine and Assault
+Doctrine remain unchanged):
+‘If your army is Battle-forged and if every unit from your army
+has this ability (excluding Servitor and Unaligned units), this
+unit gains a bonus (see below) depending on which combat
+doctrine is active for your army, as follows:
+• During the first battle round, the Devastator Doctrine is
+active for your army.
+• During the second battle round, the Tactical Doctrine is
+active for your army.
+• At the start of the third battle round, select either the Tactical
+Doctrine or Assault Doctrine: until the end of that battle
+round, the doctrine you selected is active for your army.
+• During the fourth and subsequent battle rounds, the Assault
+Doctrine is active for your army.
+Unless specified otherwise, this bonus is not cumulative
+with any other rules that improve the Armour Penetration
+characteristic of a weapon (e.g. the Storm of Fire Warlord Trait).’
+Page 36 – Astorath, Priest
+Change the first sentence to:
+‘This model knows the Litany of Hate (see below) and two other
+litanies from the Litanies of Battle (pg 58).’
+Page 37 – Lemartes, Abilities
+Add the following ability:
+‘Black Rage: Add 1 to the Attacks characteristic of models in
+this unit during any turn in which it made a charge move. When
+a model in this unit would lose a wound, roll one D6; on a 6 that
+wound is not lost.’
+Change the first sentence of the Priest section to:
+‘This model knows the Litany of Hate (see below) and one other
+litany from the Litanies of Battle (pg 58).’
+Page 37 – Chaplain in Terminator Armour, Priest
+Change the first sentence to:
+‘This model knows the Litany of Hate (see below) and one other
+litany from the Litanies of Battle (pg 58).’
+Page 38 – Chaplain, Priest
+Change the first sentence to:
+‘This model knows the Litany of Hate (see below) and one other
+litany from the Litanies of Battle (pg 58).’
+Page 38 – Primaris Chaplain, Priest
+Change the first sentence to:
+‘This model knows the Litany of Hate (see below) and one other
+litany from the Litanies of Battle (pg 58).’
+*Page 40 – Repulsor Executioner, Power of the Machine Spirit
+Delete this ability.
+*Page 41 – Captain in Phobos Armour,
+master-crafted instigator bolt carbine, Abilities
+Change to read:
+‘Each time you select a target for this weapon, you can ignore the
+Look Out, Sir rule.’
+*Pages 41 and 42 – Captain in Phobos Armour and Librarian in
+Phobos Armour, Abilities, Camo Cloak
+Change to read:
+‘Each time a ranged attack is allocated to this model while it
+is receiving the benefits of cover, add an additional 1 to any
+armour saving throw made against that attack.’
+Page 42 – Librarian in Phobos Armour, Psyker
+Change the last sentence to read:
+‘It knows Smite and two psychic powers from the Obscuration
+discipline (pg 58) or two psychic powers from the Sanguinary
+discipline (see Codex: Blood Angels).’
+WARHAMMER 40,000 – PSYCHIC AWAKENING: BLOOD OF BAAL 2
+Page 42 – Sanguinary Priest, Abilities
+Replace ‘And They Shall Know No Fear’ with ‘Angels of Death’
+*Page 48 – Eliminator Squad, bolt sniper rifle, executioner
+round, hyperfrag round and mortis round, Abilities
+Change the first sentence to read:
+‘Each time you select a target for this weapon, you can ignore the
+Look Out, Sir rule.’
+*Page 48 – Eliminator Squad, instigator bolt carbine, Abilities
+Change to read:
+‘Each time you select a target for this weapon, you can ignore the
+Look Out, Sir rule.’
+*Page 48 – Eliminator Squad, Camo Cloak
+Change to read:
+‘Each time a ranged attack is allocated to a model in this unit
+while it is receiving the benefits of cover, add an additional 1 to
+any armour saving throw made against that attack.’
+*Page 54 – Stratagems, Big Guns Never Tire
+Delete this Stratagem.
+Page 54 – Stratagems, Duty Eternal
+Change this Stratagem to read:
+‘Use this Stratagem when a Blood Angels Dreadnought model
+from your army is chosen as the target for an attack. Until the end
+of the phase, when resolving an attack made against that model,
+you can reduce any damage suffered by 1, to a minimum of 1 (this
+is not cumulative with any other rules that reduce the damage).’
+*Page 56 – Target Sighted
+Change the third sentence to read:
+‘Until the end of the phase, stalker bolt rifles the models in that
+unit are armed with gain the following ability: ‘Each time you
+select a target for this weapon, you can ignore the Look Out, Sir
+rule. If you roll a wound roll of 6+ for this weapon, it inflicts a
+mortal wound in addition to its normal damage.’
+Page 56 – Stratagems, Adaptive Strategy
+Delete this Stratagem.
+*Pages 66 & 67 – Ranged Weapons
+Add the following:
+‘Instigator bolt carbine – 0 points
+Las fusil – 10 points’
+*Page 75 – Hive Fleet Adaptations, Morphic Sinews
+Change to read:
+‘Monster models with this adaptation do not suffer the penalty
+incurred to their hit rolls for firing at enemy units that are
+within Engagement Range of them, and do not suffer the penalty
+incurred to their hit rolls for firing Assault weapons in a turn in
+which they Advanced.’
+Page 76 – Adaptive Physiology
+Add the following at the end of the first paragraph:
+‘Named characters cannot be given an Adaptive Physiology.’
+*Page 76 – Infantry Adaptive Physiologies,
+Dynamic Camouflage
+Change to read:
+‘Each time a ranged attack is allocated to a model in this unit
+while it is receiving the benefits of cover, add an additional 1 to
+any armour saving throw made against that attack.’
+FAQs
+BLOOD ANGELS
+Q: Is the Fury Within ability’s improvement to Armour
+Penetration characteristics cumulative with that from the
+Assault Doctrine?
+A: No.
+TYRANIDS
+Q: If an Exocrine model is affected by the Symbiotic Devastation
+Stratagem in the same turn that it Advanced, can it then shoot
+that turn?
+A: No, because it has still Advanced that turn.
+Q: Can the Hive Instinct Stratagem be used after a charge roll is
+failed for a unit from your army?
+A: Yes. However, it will not affect the charge roll that was just
+failed, as the number of dice to roll for that charge roll will have
+already been determined by that point.
+Q: Does the Bio-metallic Cysts Hive Fleet Adaptation also
+improve the Armour Penetration characteristic of massive
+scything talons and monstrous scything talons?
+A: No.
+Q: Does the Cranial Channelling Hive Fleet Adaptation allow
+each Psyker unit with this adaptation to re-roll one Psychic test
+per turn, or a single Psyker unit with this Adaptation in your
+army to re-roll one Psychic test per turn?
+A: It allows a single Psyker unit with this Adaptation in your
+army to re-roll one Psychic test per turn.

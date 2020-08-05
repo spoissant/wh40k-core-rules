@@ -1,34 +1,58 @@
 import React, { useState, useEffect, useMemo } from "react";
 import ReactDOMServer from "react-dom/server";
 import "./App.css";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga";
 
 import styled from "styled-components";
 import coreRules from "./data/core-rules";
+import tyranidsFaq from "./data/tyranids.json";
+import necronsFaq from "./data/necrons.json";
+import tauFaq from "./data/tau.json";
+import ritualOfTheDamnedFaq from "./data/ritual_of_the_damned.json";
+import theGreaterGoodFaq from "./data/the_greater_good.json";
+import thousandSonsFaq from "./data/thousand_sons.json";
+import bloodOfBaalFaq from "./data/blood_of_baal.json";
 import { Waypoint } from "react-waypoint";
 
-import useDebounce from './utils/utils'
-import debounce from 'lodash/debounce'
+import useDebounce from "./utils/utils";
+import debounce from "lodash/debounce";
 
-ReactGA.initialize('UA-173899337-1');
+ReactGA.initialize("UA-173899337-1");
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 const applyFilter = (node, filter, parentMatches) => {
-  const text = ReactDOMServer.renderToString(node.text)
-  const match = parentMatches || text.toLowerCase().includes(filter.query)
-  const children = node.children.map(c => applyFilter(c, filter, match)).filter(n => n)
-  return (match || children.length > 0) ? { ...node, children: children } : null
-}
+  const text = ReactDOMServer.renderToString(node.text);
+  const match = parentMatches || text.toLowerCase().includes(filter.query);
+  const children = node.children
+    .map((c) => applyFilter(c, filter, match))
+    .filter((n) => n);
+  return match || children.length > 0 ? { ...node, children: children } : null;
+};
 
-const filterDebounceTime = 300
+const filterDebounceTime = 300;
 
 const debouncedResetScroll = debounce(() => {
-  window.scrollTo(0, 0)
-}, filterDebounceTime)
+  window.scrollTo(0, 0);
+}, filterDebounceTime);
 
 function App() {
-  const [filtered, setFiltered] = useState(coreRules)
-  const [query, setQuery] = useState('')
+  const dataSource = {
+    text: null,
+    tags: [],
+    children: [
+      coreRules,
+      tyranidsFaq,
+      bloodOfBaalFaq,
+      tauFaq,
+      theGreaterGoodFaq,
+      thousandSonsFaq,
+      ritualOfTheDamnedFaq,
+      necronsFaq,
+    ],
+  };
+  // const dataSource = tyranidsFaq
+  const [filtered, setFiltered] = useState(dataSource);
+  const [query, setQuery] = useState("");
   // const [breadcrumb, setBreadcrumb] = useState(["", "", "", "", "", ""]);
   // const updateBreadcrumb = ({ level, text }) => {
   //   if(level <= 3) {
@@ -42,34 +66,45 @@ function App() {
   //   }
   // };
 
-  const debouncedApplyFilter = useMemo(() => debounce((query) => {
-    const filter = { query: query.toLowerCase() }
-    setFiltered(applyFilter(coreRules, filter, false))
-  }, filterDebounceTime), [])
+  const debouncedApplyFilter = useMemo(
+    () =>
+      debounce((query) => {
+        const filter = { query: query.toLowerCase() };
+        setFiltered(applyFilter(dataSource, filter, false));
+      }, filterDebounceTime),
+    []
+  );
 
   useEffect(() => {
     // I am displayed if I match OR if one of my children matches
     // If I match, all of my children are matched
-    debouncedApplyFilter(query)
-    debouncedResetScroll()
-
-  }, [query, debouncedApplyFilter])
+    debouncedApplyFilter(query);
+    debouncedResetScroll();
+  }, [query, debouncedApplyFilter]);
 
   // const debouncedBreadcrumb = useDebounce(breadcrumb, 300);
-  
+
   return (
     <div className="App">
       {/* <Header>{debouncedBreadcrumb.filter((item) => item).join(" > ")}</Header> */}
-      <Header><SearchInput type='text' value={query} onChange={e => setQuery(e.target.value)} /></Header>
+      <Header>
+        <SearchInput
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </Header>
       <Container>
-        {filtered ? filtered.children.map((c, i) => (
-          <Node
-            key={i}
-            // updateBreadcrumb={updateBreadcrumb}
-            node={c}
-            level={1}
-          />
-        )) : (
+        {filtered ? (
+          filtered.children.map((c, i) => (
+            <Node
+              key={i}
+              // updateBreadcrumb={updateBreadcrumb}
+              node={c}
+              level={1}
+            />
+          ))
+        ) : (
           <h1>No matches found</h1>
         )}
       </Container>
@@ -94,18 +129,18 @@ const headings = {
   4: styled.h4``,
   5: styled.h5``,
   6: styled.h6``,
-}
+};
 
 const Node = ({ node, level, updateBreadcrumb }) => {
   const actualLevel = node.level ?? level;
   const advanced = node.tags.some((t) => t === "advanced");
-  const table = node.tags.some(t => t === 'table');
-  const Heading = headings[actualLevel]
-  let title = null 
-  
-  if(node.text) {
-    if(table) {
-      title = node.text
+  const table = node.tags.some((t) => t === "table");
+  const Heading = headings[actualLevel];
+  let title = null;
+
+  if (node.text) {
+    if (table) {
+      title = node.text;
     } else {
       title = (
         <Heading className={advanced ? "advanced_title" : ""}>
@@ -124,13 +159,12 @@ const Node = ({ node, level, updateBreadcrumb }) => {
           /> */}
           {node.text}
         </Heading>
-      )
+      );
     }
   }
 
   let children = null;
-  if(table) {
-
+  if (table) {
   } else if (node.children.every((c) => c.children.length === 0 && !c.level)) {
     children = <Rules nodes={node.children} />;
   } else {
@@ -169,7 +203,7 @@ const Header = styled.div`
   left: 0;
   z-index: 1000;
   padding: 8px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 22px;
   font-weight: 700;
   height: 40px;
@@ -181,7 +215,7 @@ const Header = styled.div`
 
 const SearchInput = styled.input`
   background: rgba(255, 255, 255, 0.2);
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 22px;
-  padding: 2px 8px
-`
+  padding: 2px 8px;
+`;

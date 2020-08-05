@@ -1,0 +1,96 @@
+WARHAMMER 40,000 – CODEX: NECRONS 1
+CODEX: NECRONS
+Indomitus Version 1.0
+These documents collect amendments to the rules and present
+our responses to players’ frequently asked questions. Often
+these amendments are updates necessitated by new releases or
+community feedback; these can be identified by the presence
+of an asterisk before the page reference. At other times, these
+amendments are errata designed to correct mistakes or add
+clarity to a rule that is not as clear as it might be.
+As they’re revised regularly, each of these documents has a
+version number; where a version number has a letter, e.g. 1.1a,
+this means it has had a local amendment, only in that language,
+to clarify a translation issue or other minor correction. When
+a document is revised, the version number will be incremented
+and new updates will be highlighted in blue, while new errata
+and FAQs will be highlighted in magenta.
+UPDATES & ERRATA
+Pages 87 and 99 – Catacomb Command Barge and Annihilation
+Barge, Abilities
+Add the following ability:
+‘Hovering: Instead of measuring distances and ranges to and
+from this model’s base, measure to and from this model’s hull or
+base (whichever is closer).’
+*Pages 91 and 104 – Deathmarks and Ranged Weapons,
+synaptic disintegrator, Abilities
+Change the first sentence to read:
+‘Each time you select a target for this weapon, you can ignore the
+Look Out, Sir rule.’
+*Page 95 – Canoptek Wraiths, Abilities, Wraith Form
+Change this ability to read:
+‘Models in this unit have a 3+ invulnerable save. Each time this
+unit makes a Normal Move, Advances, Falls Back or makes a
+charge move, until that move is finished, models in this unit can
+move horizontally through models and terrain features (they
+cannot finish a move on top of another model, or its base). ’
+*Page 98 – Monolith, Abilities, Eternity Gate
+Change the penultimate sentence of this ability to read:
+‘Set up the unit so that it is wholly within 3" of this model and
+not within Engagement Range of any enemy units ; the unit
+that has just been set up counts as having disembarked from a
+Transport for all rules purposes.’
+*Page 98 – Monolith, Abilities, Floating Fortress
+Delete this ability.
+*Page 102 – Night Scythe, Abilities, Invasion Beams
+Change the penultimate sentence of this ability to read:
+‘Set up the unit so that it is wholly within 3" of this model and
+not within Engagement Range of any enemy units ; the unit
+that has just been set up counts as having disembarked from a
+Transport for all rules purposes.’
+*Page 110 – Stratagems, Emergency Invasion Beam, rules text
+Add the following:
+‘Units set up with this Stratagem can be set up during the first
+battle round, regardless of any mission rules.’
+Page 112 – Stratagems, Methodical Destruction
+Change to read:
+‘Use this Stratagem after a Sautekh unit from your army has
+attacked an enemy unit and the attack resulted in the enemy
+unit losing one or more wounds. Add 1 to hit rolls for attacks
+made by other Sautekh units from your army that target the
+same enemy unit this phase.’
+Page 117 – Named Characters and Warlord Traits
+Add the following at the end of the paragraph:
+‘If either Illuminor Szeras or Anrakyr the Traveller is your
+Warlord, then replace the <Dynasty> keyword in their Warlord
+Trait with Necron.’
+*Page 117 – Dynasty Warlord Traits, Mephrit, Merciless Tyrant,
+rules text
+Change the second sentence to read:
+‘Each time you select a target for an Assault weapon this
+Warlord is making an attack with, you can ignore the Look Out,
+Sir rule.’
+Page 118 – Points Values, Troops
+Move the entries for Deathmarks and Lychguard from the
+‘Troops’ section into the ‘Elites’ section.
+FAQs
+Q: Can C’tan Shards use a Power of the C’tan while within
+Engagement Range of an enemy model?
+A: Yes.
+Q: Can a Triarch Stalker use its Targeting Relay ability to re-roll
+hit rolls of 1 for its own attacks after the first?
+A: No.
+Q: Can the Quantum Deflection Stratagem allow a unit with
+the Quantum Shielding ability to ignore attacks with a Damage
+characteristic of 1?
+A: Yes.
+WARHAMMER 40,000 – CODEX: NECRONS 2
+Q: When Deathmarks use the Ethereal Interception ability
+to attack an enemy unit that has just been set up, does every
+Deathmark model have to target that unit, or only at least one?
+A: Every model in the Deathmarks unit must target the unit that
+has just been set up.
+Q: Are units that are set up on their tomb world using the
+Invasion Beams and Eternity Gate abilities counted as
+Reinforcement units for the purpose of any mission rules ?
+A: Yes.
