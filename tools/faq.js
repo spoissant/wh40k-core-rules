@@ -5,15 +5,28 @@ const path = require("path");
 
 const root = path.posix.dirname(process.argv[1]);
 
+// File to tags
+const fileNameToTags = {
+  blood_of_baal: ["tyranids", "blood_angels"],
+  necrons: ["necrons"],
+  ritual_of_the_damned: ["thousand_sons", "dark_angels", "grey_knights"],
+  tau: ["tau"],
+  the_greater_good: ["tau", "genestealer_cult", "astra_militarum"],
+  thousand_sons: ["thousand_sons"],
+  tyranids: ["tyranids"],
+};
+
 const startRegex = /^(\*?Page)|(Q:)/;
 const errataRegex = /^\*?Page/;
 const questionRegex = /^Q:/;
 const childrenStartRegex = /(\):|to:|following:|’:|ability:|read:|A: )/;
 const footerRegex = /WARHAMMER 40,000/;
 const childrenEndRegex = /\.$/;
+const versionRegex = /Version /;
 
 fs.readdir(`${root}/faq`, function (err, items) {
   items.forEach((item) => {
+    let version = null;
     const text = fs.readFileSync(`${root}/faq/${item}`).toString("utf-8");
 
     const lines = text.split("\n");
@@ -22,7 +35,10 @@ fs.readdir(`${root}/faq`, function (err, items) {
     let parent = null;
     let children = null;
     let isQuestion = false;
-    lines.forEach((line) => {
+    lines.forEach((line, idx) => {
+      if (!version && (idx === 2 || idx === 3) && versionRegex.test(line)) {
+        version = line;
+      }
       if (footerRegex.test(line)) {
         // Do nothing
       } else if (startRegex.test(line)) {
@@ -103,8 +119,9 @@ fs.readdir(`${root}/faq`, function (err, items) {
     const name = path.basename(item, ".txt");
 
     const faq = {
-      text: `${name.replace(/_/gi, " ")} FAQ`,
-      tags: ["faq"],
+      text: `${name.replace(/_/gi, " ")} FAQ - ${version}`,
+      level: 2,
+      tags: ["faq", ...fileNameToTags[name]],
       children: results,
     };
 

@@ -19,38 +19,43 @@ ul {
 }
 
 ul:before {
-  content:"";
-  position:absolute;
-  bottom:0;
-  right:0;
-  border-width:0px 0px 24px 24px;
-  border-style:solid;
-  border-color:transparent #e5e6e2 #e5e6e2 transparent;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-width: 0px 0px 24px 24px;
+  border-style: solid;
+  border-color: transparent #e5e6e2 #e5e6e2 transparent;
 }
 
 li {
   list-style-type: none;
-  position: relative;    /* It's needed for setting position to absolute in the next rule. */
-  font-family: 'Roboto Condensed', sans-serif;
+  position: relative; /* It's needed for setting position to absolute in the next rule. */
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
   padding: 2px 0;
   font-size: 18px;
 }
 
 li:before {
-  content: '■';
+  content: "■";
   color: #9f191e;
   position: absolute;
   line-height: 17px;
-  left: -0.8em;          /* Adjust this value so that it appears where you want. */
-  font-size: 34px;      /* Adjust this value so that it appears what size you want. */
+  left: -0.8em; /* Adjust this value so that it appears where you want. */
+  font-size: 34px; /* Adjust this value so that it appears what size you want. */
 }
 
 p {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   /* position: -webkit-sticky;
   position: sticky;
   top: 0; */
@@ -59,7 +64,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 0 8px 0;
   /* height: 60px; */
   /* font-family: 'Source Sans Pro', sans-serif; */
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  word-break: break-all;
 }
 
 h1 {
@@ -92,7 +98,6 @@ h5 {
 }
 
 h6 {
-  
 }
 
 .advanced_title {
@@ -106,12 +111,12 @@ h6 {
 }
 
 .advanced_title:before {
-  content:"";
-  position:absolute;
-  top:0;
-  right:0;
-  border-width:16px 0px 0px 16px;
-  border-style:solid;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 16px 0px 0px 16px;
+  border-style: solid;
   border-color: #e5e6e2 #e5e6e2 transparent transparent;
 }
 
@@ -122,5 +127,5 @@ h6 {
 }
 
 .advanced_rules ul:before {
-  border-color:transparent #eae9e6 #eae9e6 transparent;
+  border-color: transparent #eae9e6 #eae9e6 transparent;
 }

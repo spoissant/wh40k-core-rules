@@ -1,28 +1,38 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useState, useCallback } from "react";
+import debounce from "lodash/debounce";
 import ReactDOMServer from "react-dom/server";
-import "./App.css";
 import ReactGA from "react-ga";
-
+import { FaBars } from "react-icons/fa";
 import styled from "styled-components";
+
+import bloodOfBaalFaq from "./data/blood_of_baal.json";
 import coreRules from "./data/core-rules";
-import tyranidsFaq from "./data/tyranids.json";
 import necronsFaq from "./data/necrons.json";
-import tauFaq from "./data/tau.json";
 import ritualOfTheDamnedFaq from "./data/ritual_of_the_damned.json";
+import tauFaq from "./data/tau.json";
 import theGreaterGoodFaq from "./data/the_greater_good.json";
 import thousandSonsFaq from "./data/thousand_sons.json";
-import bloodOfBaalFaq from "./data/blood_of_baal.json";
-import { Waypoint } from "react-waypoint";
+import tyranidsFaq from "./data/tyranids.json";
+import Menu from "./Menu";
 
-import useDebounce from "./utils/utils";
-import debounce from "lodash/debounce";
+import "./App.css";
 
 ReactGA.initialize("UA-173899337-1");
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 const applyFilter = (node, filter, parentMatches) => {
   const text = ReactDOMServer.renderToString(node.text);
-  const match = parentMatches || text.toLowerCase().includes(filter.query);
+
+  // Query
+  const queryMatch = text.toLowerCase().includes(filter.query);
+
+  // Faction Filtering
+  const filterMatch =
+    !filter?.factions?.length ||
+    node.tags.some((t) => filter.factions.includes(t));
+
+  const match = parentMatches || (queryMatch && filterMatch);
+
   const children = node.children
     .map((c) => applyFilter(c, filter, match))
     .filter((n) => n);
@@ -35,21 +45,110 @@ const debouncedResetScroll = debounce(() => {
   window.scrollTo(0, 0);
 }, filterDebounceTime);
 
-function App() {
-  const dataSource = {
-    text: null,
+const menu = [
+  {
+    id: "rules",
+    label: "Rules",
     tags: [],
-    children: [
-      coreRules,
-      tyranidsFaq,
-      bloodOfBaalFaq,
-      tauFaq,
-      theGreaterGoodFaq,
-      thousandSonsFaq,
-      ritualOfTheDamnedFaq,
-      necronsFaq,
+    subMenus: [
+      { id: "core", label: "Core Rules", tags: ["core"] },
+      { id: "main", label: "Other Rulebook Rules", tags: ["main"] },
     ],
-  };
+  },
+  {
+    id: "spaceMarinesGroup",
+    label: "Space Marines",
+    tags: [],
+    subMenus: [
+      {
+        id: "space_marines",
+        label: "Space Marines",
+        tags: ["space_marines"],
+      },
+      {
+        id: "ultramarines",
+        label: "Ultramarines",
+        tags: ["ultramarines"],
+      },
+    ],
+  },
+  {
+    id: "xenos",
+    label: "Xenos",
+    tags: [],
+    subMenus: [
+      {
+        id: "tyranidsGroup",
+        label: "Tyranids",
+        tags: [],
+        subMenus: [
+          {
+            id: "tyranids",
+            label: "Tyranids",
+            tags: ["tyranids"],
+          },
+          {
+            id: "gsc",
+            label: "Genestealer Cult",
+            tags: ["genestealer_cult"],
+          },
+        ],
+      },
+      {
+        id: "tau",
+        label: "T'au Empire",
+        tags: ["tau"],
+      },
+      {
+        id: "necrons",
+        label: "Necrons",
+        tags: ["necrons"],
+      },
+    ],
+  },
+  {
+    id: "armiesOfChaos",
+    label: "Armies of Chaos",
+    tags: [],
+    subMenus: [
+      {
+        id: "ts",
+        label: "Thousand Sons",
+        tags: ["thousand_sons"],
+      },
+    ],
+  },
+];
+
+const menuToFactions = (menus) =>
+  menus
+    .map(({ selected, subMenus, tags }) => [
+      ...(selected ? tags : []),
+      ...(subMenus ? menuToFactions(subMenus) : []),
+    ])
+    .flat();
+
+function App() {
+  const dataSource = useMemo(
+    () => ({
+      text: null,
+      tags: [],
+      children: [
+        coreRules,
+        tyranidsFaq,
+        bloodOfBaalFaq,
+        tauFaq,
+        theGreaterGoodFaq,
+        thousandSonsFaq,
+        ritualOfTheDamnedFaq,
+        necronsFaq,
+      ],
+    }),
+    []
+  );
+  const [factions, setFactions] = useState([]);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   // const dataSource = tyranidsFaq
   const [filtered, setFiltered] = useState(dataSource);
   const [query, setQuery] = useState("");
@@ -66,28 +165,42 @@ function App() {
   //   }
   // };
 
+  const handleMenuClose = useCallback(() => setMenuOpen(false), []);
+
   const debouncedApplyFilter = useMemo(
     () =>
-      debounce((query) => {
-        const filter = { query: query.toLowerCase() };
+      debounce((query, factions) => {
+        const filter = { query: query.toLowerCase(), factions };
+        console.log("applyFilter - Factions", filter.factions);
         setFiltered(applyFilter(dataSource, filter, false));
       }, filterDebounceTime),
-    []
+    [dataSource]
   );
 
   useEffect(() => {
     // I am displayed if I match OR if one of my children matches
     // If I match, all of my children are matched
-    debouncedApplyFilter(query);
+    debouncedApplyFilter(query, factions);
     debouncedResetScroll();
-  }, [query, debouncedApplyFilter]);
+  }, [query, factions, debouncedApplyFilter]);
 
   // const debouncedBreadcrumb = useDebounce(breadcrumb, 300);
+
+  const handlMenuChange = useCallback(
+    (menu) => setFactions(menuToFactions(menu)),
+    []
+  );
 
   return (
     <div className="App">
       {/* <Header>{debouncedBreadcrumb.filter((item) => item).join(" > ")}</Header> */}
       <Header>
+        <div
+          onClick={() => setMenuOpen((prev) => !prev)}
+          style={{ padding: "4px", cursor: "pointer" }}
+        >
+          <FaBars />
+        </div>
         <SearchInput
           type="text"
           value={query}
@@ -108,6 +221,14 @@ function App() {
           <h1>No matches found</h1>
         )}
       </Container>
+      <MenuContainer>
+        <Menu
+          isOpen={menuOpen}
+          menu={menu}
+          onChange={handlMenuChange}
+          onClose={handleMenuClose}
+        />
+      </MenuContainer>
     </div>
   );
 }
@@ -218,4 +339,16 @@ const SearchInput = styled.input`
   font-family: "Roboto Condensed", sans-serif;
   font-size: 22px;
   padding: 2px 8px;
+`;
+
+const MenuContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 `;

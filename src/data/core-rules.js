@@ -69,7 +69,7 @@ export default {
   tags: ["core"],
   children: [
     {
-      text: <>Basic Rules</>,
+      text: <>Basic Rules V1.1</>,
       level: 1,
       tags: ["core"],
       children: [
@@ -972,6 +972,23 @@ export default {
                   tags: ["main", "9th"],
                   children: [],
                 },
+                {
+                  text: (
+                    <>
+                      Dense Cover terrain imposes a hit penalty whenever it is
+                      between the firing model and its intended target (with the
+                      noted exceptions). It is not required for a unit to be
+                      fulfilling the criteria of ‘gaining the benefits of
+                      cover’, as described for Obstacles and Area Terrain, for
+                      this penalty to hit rolls to apply (but also note that any
+                      rule that ignores the benefits of cover, or that ignores
+                      the benefits of cover that impose a penalty on hit rolls,
+                      would still ignore that penalty).
+                    </>
+                  ),
+                  tags: ["main", "9th"],
+                  children: [],
+                },
               ],
             },
             {
@@ -1028,7 +1045,8 @@ export default {
                     <>
                       <Keyword>Aircraft</Keyword> and models with W
                       characteristic of 18+ are visible and can be targeted
-                      through this terrain feature. (the reverse is not true)
+                      through this terrain feature following normal LOS rules.
+                      (the reverse is not true)
                     </>
                   ),
                   tags: ["main", "9th"],
@@ -1067,10 +1085,9 @@ export default {
                 {
                   text: (
                     <>
-                      +1 to saving throws against melee weapons (unless
-                      attacking model has made a charge move this turn) for
-                      models receiveing the <Rule>benefits of cover</Rule> from
-                      this terrain feature.
+                      +1 to saving throws against melee weapons for models that
+                      didn't charge this turn and are receiveing the{" "}
+                      <Rule>benefits of cover</Rule> from this terrain feature.
                     </>
                   ),
                   tags: ["main", "9th"],
@@ -2278,9 +2295,11 @@ export default {
                         <>
                           Cannot shoot at an enemy <Keyword>Character</Keyword>{" "}
                           with 9 or less wounds while it is within 3" of a
-                          friendly unit (<Keyword>Monsters</Keyword>,{" "}
-                          <Keyword>Vehicle</Keyword> or unit of 3+ models)
-                          unless it is the closest target.
+                          friendly unit that contains 1{" "}
+                          <Keyword>Monsters</Keyword>, 1{" "}
+                          <Keyword>Vehicle</Keyword> or 3+ other models
+                          (excluding <Keyword>Character</Keyword> models with 9
+                          or less wounds) unless it is the closest target.
                         </>
                       ),
                       tags: ["core"],
