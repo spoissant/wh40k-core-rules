@@ -68,7 +68,7 @@ const GameApp = () => {
 
   useEffect(() => {
     const step = gameState?.step ?? steps[0];
-    history.replace(`${match.path}/${steps[step]}`);
+    history.replace(`${match.path}/${step}`);
   }, []);
 
   useEffect(() => {
