@@ -92,41 +92,43 @@ const GameApp = () => {
 
   return (
     <Container maxWidth="sm">
-      <Switch style={{ flex: 1 }}>
-        <Route key="player1" path={`${match.path}/player1`}>
-          <Player idx={0} next={next} />
-        </Route>
-        <Route key="player2" path={`${match.path}/player2`}>
-          <Player idx={1} next={next} />
-        </Route>
-        <Route key="choose-mission" path={`${match.path}/choose-mission`}>
-          <ChooseMission next={next} />
-        </Route>
-        <Route
-          key="secondaries_player1"
-          path={`${match.path}/secondaries_player1`}
-        >
-          <Secondaries idx={0} next={next} />
-        </Route>
-        <Route
-          key="secondaries_player2"
-          path={`${match.path}/secondaries_player2`}
-        >
-          <Secondaries idx={1} next={next} />
-        </Route>
-        <Route key="game-setup" path={`${match.path}/game-setup`}>
-          Some text to explain these steps: 8. Determine Attacker and Defender
-          9. Choose Deployment Zone 10. Declare Reserves and Transports 11.
-          Deploy Armies 12. Determine First Turn 13. Resolve pre-battle
-          abilities
-          <Button variant="contained" color="primary" onClick={next}>
-            Continue
-          </Button>
-        </Route>
-        <Route key="make-war" path={`${match.path}/make-war`}>
-          ScoreSheet goes here
-        </Route>
-      </Switch>
+      <Box mb={8}>
+        <Switch style={{ flex: 1 }}>
+          <Route key="player1" path={`${match.path}/player1`}>
+            <Player idx={0} next={next} />
+          </Route>
+          <Route key="player2" path={`${match.path}/player2`}>
+            <Player idx={1} next={next} />
+          </Route>
+          <Route key="choose-mission" path={`${match.path}/choose-mission`}>
+            <ChooseMission next={next} />
+          </Route>
+          <Route
+            key="secondaries_player1"
+            path={`${match.path}/secondaries_player1`}
+          >
+            <Secondaries idx={0} next={next} />
+          </Route>
+          <Route
+            key="secondaries_player2"
+            path={`${match.path}/secondaries_player2`}
+          >
+            <Secondaries idx={1} next={next} />
+          </Route>
+          <Route key="game-setup" path={`${match.path}/game-setup`}>
+            Some text to explain these steps: 8. Determine Attacker and Defender
+            9. Choose Deployment Zone 10. Declare Reserves and Transports 11.
+            Deploy Armies 12. Determine First Turn 13. Resolve pre-battle
+            abilities
+            <Button variant="contained" color="primary" onClick={next}>
+              Continue
+            </Button>
+          </Route>
+          <Route key="make-war" path={`${match.path}/make-war`}>
+            ScoreSheet goes here
+          </Route>
+        </Switch>
+      </Box>
       <Box
         position="fixed"
         bottom="0"
