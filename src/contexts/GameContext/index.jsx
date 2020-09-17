@@ -7,7 +7,7 @@ const GameStateContext = React.createContext({
 });
 
 export const GameContextProvider = ({ children }) => {
-  const [gameState, setGameState] = useLocalStorageState("gameState", {
+  const defaultGameState = {
     players: [
       {
         name: "",
@@ -18,10 +18,20 @@ export const GameContextProvider = ({ children }) => {
         faction: "",
       },
     ],
-  });
+  };
+  const [gameState, setGameState] = useLocalStorageState(
+    "gameState",
+    defaultGameState
+  );
+
+  const resetGameState = () => {
+    setGameState(defaultGameState);
+  };
 
   return (
-    <GameStateContext.Provider value={{ gameState, setGameState }}>
+    <GameStateContext.Provider
+      value={{ gameState, setGameState, resetGameState }}
+    >
       {children}
     </GameStateContext.Provider>
   );
