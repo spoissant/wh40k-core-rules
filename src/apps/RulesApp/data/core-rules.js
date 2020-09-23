@@ -1,19 +1,19 @@
+import React from "react";
+import styled from "styled-components";
+
 // https://regexr.com/59581
 // regex: \s?([^\n\r]*)
 // list: {text:<>$1",tags:['main'],children:[],},\n
-import React from "react";
-import styled from "styled-components";
 
 const Rule = styled.span`
   font-weight: bold;
 `;
 
 const Keyword = styled.span`
-    font-weight: 700;
-    font-variant: small-caps;
-    font-size: 21px;
-    letter-spacing: 1px;
-}
+  font-weight: 700;
+  font-variant: small-caps;
+  font-size: 21px;
+  letter-spacing: 1px;
 `;
 
 const TableTitle = styled.div`

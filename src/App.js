@@ -5,7 +5,7 @@ import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
 
-import { GameContextProvider } from "./contexts/GameContext";
+import { GameContextProvider } from "./apps/GameApp/contexts/GameContext";
 
 import RulesApp from "./apps/RulesApp";
 import GameApp from "./apps/GameApp";

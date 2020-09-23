@@ -4,14 +4,14 @@ import ReactDOMServer from "react-dom/server";
 import { FaBars } from "react-icons/fa";
 import styled from "styled-components";
 
-import bloodOfBaalFaq from "../../data/blood_of_baal.json";
-import coreRules from "../../data/core-rules";
-import necronsFaq from "../../data/necrons.json";
-import ritualOfTheDamnedFaq from "../../data/ritual_of_the_damned.json";
-import tauFaq from "../../data/tau.json";
-import theGreaterGoodFaq from "../../data/the_greater_good.json";
-import thousandSonsFaq from "../../data/thousand_sons.json";
-import tyranidsFaq from "../../data/tyranids.json";
+import bloodOfBaalFaq from "./data/blood_of_baal.json";
+import coreRules from "./data/core-rules";
+import necronsFaq from "./data/necrons.json";
+import ritualOfTheDamnedFaq from "./data/ritual_of_the_damned.json";
+import tauFaq from "./data/tau.json";
+import theGreaterGoodFaq from "./data/the_greater_good.json";
+import thousandSonsFaq from "./data/thousand_sons.json";
+import tyranidsFaq from "./data/tyranids.json";
 import Menu from "./components/Menu";
 
 const applyFilter = (node, filter, parentMatches) => {
