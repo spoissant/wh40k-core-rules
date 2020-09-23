@@ -9,6 +9,7 @@ import Select from "@material-ui/core/Select";
 import { useGameContext } from "../contexts/GameContext";
 import { BATTLE_SIZES, GAME_MODES } from "../data/common";
 import MISSIONS from "../data/missions";
+import Objective from "./Objective";
 
 // 1. Select Battle Size
 // 2. Muster Armies
@@ -93,19 +94,11 @@ const ChooseMission = ({ next }) => {
           <Box>{mission.briefing}</Box>
           <h2>Primary Objectives</h2>
           {mission.primary_objectives.map((o) => (
-            <Box key={o.name}>
-              <h3>{o.name}</h3>
-              <h4>{o.type}</h4>
-              <Box>{o.description}</Box>
-            </Box>
+            <Objective key={o.name} objective={o} />
           ))}
           <h2>Secondary Objectives</h2>
           {mission.secondary_objectives.map((o) => (
-            <Box key={o.name}>
-              <h3>{o.name}</h3>
-              <h4>{o.type}</h4>
-              <Box>{o.description}</Box>
-            </Box>
+            <Objective key={o.name} objective={o} />
           ))}
           <h2>Deployment</h2>
           <img

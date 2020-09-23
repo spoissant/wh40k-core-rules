@@ -7,6 +7,7 @@ import { useGameContext } from "../contexts/GameContext";
 import { SECONDARY_CATEGORIES } from "../data/common";
 import MISSIONS from "../data/missions";
 import SECONDARIES from "../data/secondaries";
+import Objective from "./Objective";
 
 const Secondaries = ({ idx, next }) => {
   const { gameState, setGameState } = useGameContext();
@@ -80,8 +81,7 @@ const Secondaries = ({ idx, next }) => {
               onClick={() => toggleSecondary(s)}
               style={{ background: playerSelected(s) ? "red" : "default" }}
             >
-              <h3>{s.name}</h3>
-              <Box>{s.description}</Box>
+              <Objective objective={s} />
             </Box>
           </Box>
         ))}
