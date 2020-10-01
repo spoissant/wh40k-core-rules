@@ -18,6 +18,17 @@ export const GameContextProvider = ({ children }) => {
         faction: "",
       },
     ],
+    scores: [
+      {
+        primaries: [0, 0, 0, 0],
+        secondaries: [0, 0, 0],
+      },
+      {
+        primaries: [0, 0, 0, 0],
+        secondaries: [0, 0, 0],
+      },
+    ],
+    cps: [0, 0],
   };
   const [gameState, setGameState] = useLocalStorageState(
     "gameState",

@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
+import { sumScore } from "../utils";
+import { useGameContext } from "../contexts/GameContext";
 
 import PlayerScore from "./PlayerScore";
 
 const MakeWar = ({ next }) => {
+  const { gameState } = useGameContext();
+
   const [drawersState, setDrawersState] = useState({
     player1: false,
     player2: false,
@@ -31,14 +35,16 @@ const MakeWar = ({ next }) => {
         color="primary"
         onClick={toggleDrawer("player1", true)}
       >
-        Player 1
+        {gameState.players[0].name || "Player 1"} -{" "}
+        {sumScore(gameState.scores[0])} pts
       </Button>
       <Button
         variant="contained"
         color="primary"
         onClick={toggleDrawer("player2", true)}
       >
-        Player 2
+        {gameState.players[1].name || "Player 2"} -{" "}
+        {sumScore(gameState.scores[1])} pts
       </Button>
       <SwipeableDrawer
         anchor="left"

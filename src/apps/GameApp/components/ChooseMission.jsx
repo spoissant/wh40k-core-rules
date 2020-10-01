@@ -27,7 +27,15 @@ const ChooseMission = ({ next }) => {
   );
 
   const onSave = () => {
-    setGameState((prev) => ({ ...prev, mode, size, mission: mission.name }));
+    const cp = BATTLE_SIZES[size].CP;
+    const cps = [cp, cp];
+    setGameState((prev) => ({
+      ...prev,
+      mode,
+      size,
+      cps,
+      mission: mission.name,
+    }));
 
     next();
   };
