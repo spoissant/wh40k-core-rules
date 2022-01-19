@@ -14,7 +14,7 @@ import thousandSonsFaq from "./data/thousand_sons.json";
 import tyranidsFaq from "./data/tyranids.json";
 import Menu from "./components/Menu";
 
-const applyFilter = (node, filter, parentMatches) => {
+const applyFilter = (node, filter, parentMatches, parentTags = []) => {
   const text = ReactDOMServer.renderToString(node.text);
 
   // Query
@@ -23,12 +23,12 @@ const applyFilter = (node, filter, parentMatches) => {
   // Faction Filtering
   const filterMatch =
     !filter?.factions?.length ||
-    node.tags.some((t) => filter.factions.includes(t));
+    [...parentTags, ...node.tags].some((t) => filter.factions.includes(t));
 
   const match = parentMatches || (queryMatch && filterMatch);
 
   const children = node.children
-    .map((c) => applyFilter(c, filter, match))
+    .map((c) => applyFilter(c, filter, match, node.tags))
     .filter((n) => n);
   return match || children.length > 0 ? { ...node, children: children } : null;
 };

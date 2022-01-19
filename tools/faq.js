@@ -1,9 +1,12 @@
 // Goal of this file is to take in a WH40k FAQ as raw text (select all, copy, paste from PDF) and convert it
 // to wh40k-core-rules nodes so they can be used to search for content in the app.
+// Navigate to ./tools and run `node faq`
 const fs = require("fs");
 const path = require("path");
 
-const root = path.posix.dirname(process.argv[1]);
+const root = path.posix.dirname(
+  process.argv[1].split(path.sep).join(path.posix.sep)
+);
 
 // File to tags
 const fileNameToTags = {
@@ -19,7 +22,7 @@ const fileNameToTags = {
 const startRegex = /^(\*?Page)|(Q:)/;
 const errataRegex = /^\*?Page/;
 const questionRegex = /^Q:/;
-const childrenStartRegex = /(\):|to:|following:|’:|ability:|read:|A: )/;
+const childrenStartRegex = /^((•|\):|to:|following:|’:|ability:|read:|A: )|(Change (this|the|to))|(Delete this))/;
 const footerRegex = /WARHAMMER 40,000/;
 const childrenEndRegex = /\.$/;
 const versionRegex = /Version /;
@@ -36,6 +39,7 @@ fs.readdir(`${root}/faq`, function (err, items) {
     let children = null;
     let isQuestion = false;
     lines.forEach((line, idx) => {
+      line = line.trim('/r');
       if (!version && (idx === 2 || idx === 3) && versionRegex.test(line)) {
         version = line;
       }
@@ -85,7 +89,7 @@ fs.readdir(`${root}/faq`, function (err, items) {
           };
           parent.children.push(children);
         }
-      } else if (parent && childrenEndRegex.test(line) && !isQuestion) {
+      } else if (parent && (childrenEndRegex.test(line) && !isQuestion)) {
         if (children) {
           children.text += ` ${line}`;
           children = null;
@@ -126,6 +130,9 @@ fs.readdir(`${root}/faq`, function (err, items) {
     };
 
     // Write to output
-    fs.writeFileSync(`${root}/../src/data/${name}.json`, JSON.stringify(faq));
+    fs.writeFileSync(
+      `${root}/../src/apps/RulesApp/data/${name}.json`,
+      JSON.stringify(faq)
+    );
   });
 });
