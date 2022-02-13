@@ -18,10 +18,8 @@ import Objective from "./Objective";
 const ChooseMission = ({ next }) => {
   const { gameState, setGameState } = useGameContext();
 
-  const [mode, setMode] = useState(gameState.mode ?? GAME_MODES.MATCHED_PLAY);
-  const [size, setSize] = useState(
-    gameState.size ?? BATTLE_SIZES.COMBAT_PATROL.key
-  );
+  const [mode, setMode] = useState(gameState.mode);
+  const [size, setSize] = useState(gameState.size);
   const [mission, setMission] = useState(
     MISSIONS.find((m) => m.name === gameState.mission)
   );
@@ -50,7 +48,7 @@ const ChooseMission = ({ next }) => {
           value={mode}
           onChange={(event) => {
             setMode(event.target.value);
-            setSize(BATTLE_SIZES.COMBAT_PATROL.key);
+            setSize(null);
             setMission(null);
           }}
         >
@@ -104,10 +102,6 @@ const ChooseMission = ({ next }) => {
           {mission.primary_objectives.map((o) => (
             <Objective key={o.name} objective={o} />
           ))}
-          <h2>Secondary Objectives</h2>
-          {mission.secondary_objectives.map((o) => (
-            <Objective key={o.name} objective={o} />
-          ))}
           <h2>Deployment</h2>
           <img
             alt="deployment"
@@ -117,8 +111,22 @@ const ChooseMission = ({ next }) => {
         </Box>
       )}
       {mission && (
+        <>
+          <h2>7. Determine Attacker and Defender</h2>
+          <Box>
+            The players roll off and the winner decides who will be the Attacker
+            and who will be the Defender.
+          </Box>
+          <h2>8. Choose Deployment Zone</h2>
+          <Box>
+            The Defender now selects one of the deployment zones for their army.
+            Their opponent uses the other deployment zone.
+          </Box>
+        </>
+      )}
+      {mission && (
         <Button variant="contained" color="primary" onClick={onSave}>
-          Continue
+          Continue to secondaries
         </Button>
       )}
     </Box>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import Container from "@material-ui/core/Container";
@@ -8,6 +8,7 @@ import {
   useHistory,
   useLocation,
   useRouteMatch,
+  Redirect,
 } from "react-router-dom";
 
 import { useGameContext } from "./contexts/GameContext";
@@ -51,7 +52,7 @@ const GameApp = () => {
   const match = useRouteMatch();
   const location = useLocation();
   const history = useHistory();
-  const { gameState, setGameState, resetGameState } = useGameContext();
+  const { resetGameState } = useGameContext();
 
   const steps = [
     "player1",
@@ -63,23 +64,11 @@ const GameApp = () => {
     "make-war",
   ];
 
-  useEffect(() => {
-    const step = gameState?.step ?? 0;
-    history.replace(`${match.path}/${steps[step]}`);
-  }, []);
-
-  useEffect(() => {
-    console.log(location.pathname);
-    let step = steps.indexOf(location.pathname.replace("/game/", ""));
-    step = step === -1 ? 0 : step;
-    if (gameState.step !== step) {
-      setGameState((prev) => ({ ...prev, step }));
-    }
-  }, [match, setGameState, steps]);
-
   const next = () => {
-    const step = gameState.step ?? 0;
-    history.push(`/game/${steps[step + 1]}`);
+    const current = location.pathname.replace(`${match.path}/`, "");
+    const nextIndex = steps.findIndex((val) => val === current) + 1;
+    const next = steps[nextIndex];
+    history.push(`/game/${next}`);
   };
 
   const reset = () => {
@@ -117,6 +106,9 @@ const GameApp = () => {
           </Route>
           <Route key="make-war" path={`${match.path}/make-war`}>
             <MakeWar />
+          </Route>
+          <Route exact path={match.path}>
+            <Redirect to={`/game/${steps[0]}`} />
           </Route>
         </Switch>
       </Box>

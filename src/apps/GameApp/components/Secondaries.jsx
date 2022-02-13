@@ -5,7 +5,6 @@ import Typography from "@material-ui/core/Typography";
 
 import { useGameContext } from "../contexts/GameContext";
 import { SECONDARY_CATEGORIES } from "../data/common";
-import MISSIONS from "../data/missions";
 import SECONDARIES from "../data/secondaries";
 import Objective from "./Objective";
 
@@ -18,10 +17,7 @@ const Secondaries = ({ idx, next }) => {
   // const availableCategories = Object.values(SECONDARY_CATEGORIES).filter(
   //   (s) => !selectedCategories.includes(s)
   // );
-  const allSecondaries = [
-    ...SECONDARIES,
-    ...MISSIONS.find((m) => m.name === gameState.mission).secondary_objectives,
-  ];
+  const allSecondaries = [...SECONDARIES];
   const availableSecondaries = Object.values(SECONDARY_CATEGORIES)
     .map((c) => allSecondaries.filter((s) => s.category === c))
     .filter((group) => group.length > 0);
@@ -130,7 +126,7 @@ const Secondaries = ({ idx, next }) => {
           >
             <h3>{s.name}</h3>
             <Typography variant="subtitle1">{s.type}</Typography>
-            <Box>{s.description}</Box>
+            <Box dangerouslySetInnerHTML={{ __html: s.description }}></Box>
           </Box>
         )),
       ])}

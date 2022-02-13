@@ -1,18 +1,18 @@
 export const BATTLE_SIZES = {
-  COMBAT_PATROL: {
-    key: "COMBAT_PATROL",
-    name: "Combat Patrol",
-    pts: 500,
-    CP: 3,
+  // COMBAT_PATROL: {
+  //   key: "COMBAT_PATROL",
+  //   name: "Combat Patrol",
+  //   pts: 500,
+  //   CP: 3,
+  //   board: '44" x 30"',
+  // },
+  INCURSION: {
+    key: "INCURSION",
+    name: "Incusrion",
+    pts: 1000,
+    CP: 6,
     board: '44" x 30"',
   },
-  // INCURSION: {
-  //   key: 'INCURSION',
-  //   name: "Incusrion",
-  //   pts: 1000,
-  //   CP: 6,
-  // board: '44" x 30"',
-  // },
   // STRIKE_FORCE: {
   //   key: 'STRIKE_FORCE',
   //   name: "Strike Force",
@@ -31,8 +31,8 @@ export const BATTLE_SIZES = {
 
 export const GAME_MODES = {
   MATCHED_PLAY: "Matched Play",
-  CRUSADE: "Crusade",
-  OPEN_PLAY: "Open Play",
+  // CRUSADE: "Crusade",
+  // OPEN_PLAY: "Open Play",
 };
 
 export const SECONDARY_CATEGORIES = {

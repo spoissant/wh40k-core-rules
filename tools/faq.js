@@ -8,15 +8,25 @@ const root = path.posix.dirname(
   process.argv[1].split(path.sep).join(path.posix.sep)
 );
 
+const TYRANIDS = "tyranids"
+const BLOOD_ANGELS = "blood_angels"
+const NECRONS = "necrons"
+const THOUSAND_SONS = "thousand_sons"
+const DARK_ANGELS = "dark_angels"
+const GREY_KNIGHTS = "grey_knights"
+const TAU = "tau"
+const GENESTEALER_CULT = "genestealer_cult"
+const ASTRA_MILITARUM = "astra_militarum"
+
 // File to tags
 const fileNameToTags = {
-  blood_of_baal: ["tyranids", "blood_angels"],
-  necrons: ["necrons"],
-  ritual_of_the_damned: ["thousand_sons", "dark_angels", "grey_knights"],
-  tau: ["tau"],
-  the_greater_good: ["tau", "genestealer_cult", "astra_militarum"],
-  thousand_sons: ["thousand_sons"],
-  tyranids: ["tyranids"],
+  blood_of_baal: [TYRANIDS, BLOOD_ANGELS],
+  necrons: [NECRONS],
+  ritual_of_the_damned: [THOUSAND_SONS, DARK_ANGELS, GREY_KNIGHTS],
+  tau: [TAU],
+  the_greater_good: [TAU, GENESTEALER_CULT, ASTRA_MILITARUM],
+  thousand_sons: [THOUSAND_SONS],
+  tyranids: [TYRANIDS],
 };
 
 const startRegex = /^(\*?Page)|(Q:)/;

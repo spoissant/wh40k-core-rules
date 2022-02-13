@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import useLocalStorageState from "use-local-storage-state";
+import { BATTLE_SIZES, GAME_MODES } from "../data/common";
 
 const GameStateContext = React.createContext({
   gameState: null,
@@ -18,6 +19,8 @@ export const GameContextProvider = ({ children }) => {
         faction: "",
       },
     ],
+    mode: GAME_MODES.MATCHED_PLAY,
+    size: BATTLE_SIZES.INCURSION.key,
     scores: [
       {
         primaries: [0, 0, 0, 0],

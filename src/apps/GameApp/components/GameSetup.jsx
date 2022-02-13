@@ -6,17 +6,7 @@ const GameSetup = ({ next }) => {
   return (
     <>
       <h1>Game Setup</h1>
-      <h2>8. Determine Attacker and Defender</h2>
-      <Box>
-        The players roll off and the winner decides who will be the Attacker and
-        who will be the Defender.
-      </Box>
-      <h2>9. Choose Deployment Zone</h2>
-      <Box>
-        The Defender now selects one of the deployment zones for their army.
-        Their opponent uses the other deployment zone.
-      </Box>
-      <h2>10. Declare REserves and Transports</h2>
+      <h2>10. Declare Reserves and Transports</h2>
       <Box>These missions use the Strategic Reserves rules (pg 256).</Box>
       <Box>
         Both players now secretly note down on their army roster which of the
@@ -50,9 +40,23 @@ const GameSetup = ({ next }) => {
       <h2>11. Deploy Armies</h2>
       <Box>
         The players alternate setting up their remaining units, one at a time,
-        starting with the Defender. A player’s models must be set up wholly
-        within their deployment zone. If one player finishes deploying all their
-        units, their opponent then deploys the remainder of their units.
+        starting with the Defender. A player must deploy all of the their
+        remaining units with the Fortifications battlefield role before
+        deploying any other unit. A player's models must be set up whilly within
+        their deployment zone. If one player finishes deploying all their units,
+        their opponent then deploys the remainder of their units.
+      </Box>
+      <Box>
+        Unless ptherwise stated, when setting up a model from a unit with the
+        Fortifications battlefield role on the battelfield, it canont be set up
+        within 3" of any other terrain feature that is not part of tiws own
+        datasheet (excluding hills). If it is not possible to set up a
+        Fortification as a result, a player can, in a War Zone Nachmund: Grand
+        Tournament missino, remove one Obstacles or Area Terrain feature that is
+        within their deployment zone from the battlefield in order to make room
+        for their Fortification. If, by doing so, it is still not possible to
+        set up their Fortification, replace the terrain fetaure removed - this
+        Fortification cannot be deployed and counts as having been destroyed.
       </Box>
       <Box>
         If a model from your army is so large that it cannot physically be set
@@ -75,17 +79,14 @@ const GameSetup = ({ next }) => {
         starting with the winner.
       </Box>
       <h2>12. Determine First Turn</h2>
-      <Box>
-        The players roll off. The winner declares whether they will take the
-        first or second turn.
-      </Box>
+      <Box>The players roll off. The winner takes the first turn.</Box>
       <h2>13. Resolve Pre-Battle Abilities</h2>
       <Box>
-        Players alternate resolving any pre-battle abilities units in their army
-        may have, and resolving any Stratagems that are used before the battle
-        (excluding those that upgrade their units or those that enable them to
-        set up a unit in a location other than the battlefield), starting with
-        the player who will take the first turn.
+        The players alternate resolving any pre-battle abilities units from
+        their army may have, and resolving any Stratagems that are used before
+        the battle (excluding those that upgrade their units or those that
+        enable them to set up a unit in a location other than the battlefield),
+        starting with the player who will take the first turn.
       </Box>
       <Button variant="contained" color="primary" onClick={next}>
         Continue
