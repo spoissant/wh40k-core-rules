@@ -9,11 +9,11 @@ import { GameContextProvider } from "./apps/GameApp/contexts/GameContext";
 import RulesApp from "./apps/RulesApp";
 
 export default function App() {
+  console.log({ env_variables: process.env });
+
   return (
     <div className="App">
-      <Router basename={process.env.REACT_APP_BASEPATH}>
-        {/* A <Switch> looks through its children <Route>s and
-              renders the first one that matches the current URL. */}
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/game" basename="/game">
             <GameContextProvider>
